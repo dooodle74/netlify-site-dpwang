@@ -34,19 +34,12 @@ code {
   align-items: center;
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between columns */
+}
+
 .column {
   flex: 1;
   margin: 0 10px; /* Adjust margin between columns */
-}
-
-.menu{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal width columns */
-  gap: 10px;
-}
-
-.item {
-  border: 1px solid #ccc;
-  padding: 10px;
 }

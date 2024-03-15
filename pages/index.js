@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Header title="Welcome to my app!" />
 
-        <div className="column"> 
+        <div className="columns"> 
           {/* First Column */}
           <div className="column"> 
             <p className="description">Short description for image 1</p> 

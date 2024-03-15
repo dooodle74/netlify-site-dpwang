@@ -1,35 +1,20 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import Link from 'next/link';
 
-export default function Home() {
+export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Hello</title>
+        <title>Other Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-
-        <div className="menu">
-          <div>
-            <p className="description">Short description for image 1</p> 
-              <Link href="/photography">
-                <button className="button">Button 1</button> 
-              </Link>
-          </div>
-
-          <div>
-            <p className="description">Short description for image 2</p> 
-              <Link href="/projects">
-                <button className="button">Button 2</button> 
-              </Link>
-          </div>
-        </div>
-
+        <Header title="Welcome to Other Page!" />
+        <p className="description">
+          This is the content of the other page.
+        </p>
       </main>
 
       <Footer />
