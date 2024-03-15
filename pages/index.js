@@ -17,6 +17,7 @@ export default function Home() {
         <div className="columns"> 
           {/* First Column */}
           <div className="column"> 
+            <img src="/icon_code.png" alt="Image 1" className="image" />
             <p className="description">Short description for image 1</p> 
             <Link href="/photography">
               <button className="button">Button 1</button> 
