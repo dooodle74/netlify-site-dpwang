@@ -58,3 +58,10 @@ code {
   text-align: center;
   font-weight: bold;
 }
+
+.image-centered {
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Set top and bottom margins to 0 and left and right margins to auto */
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
