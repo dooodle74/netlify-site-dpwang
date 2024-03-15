@@ -38,3 +38,8 @@ code {
   flex: 1;
   margin: 0 10px; /* Adjust margin between columns */
 }
+
+.menu{
+  column-count: 2;
+  column-gap: 40px;
+}
