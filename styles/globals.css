@@ -40,6 +40,7 @@ code {
 }
 
 .menu{
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal width columns */
   gap: 10px;
