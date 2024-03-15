@@ -29,7 +29,11 @@ code {
 .container {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px; /* Adjust margin between columns */
 }
