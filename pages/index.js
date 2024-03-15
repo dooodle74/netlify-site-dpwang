@@ -14,7 +14,15 @@ export default function Home() {
       <main>
         <Header title="Welcome to my app!" />
 
-        <div className="menu">
+
+        <div class="menu">
+          <div class="item">Div 1</div>
+          <div class="item">Div 2</div>
+          <div class="item">Div 3</div>
+          <div class="item">Div 4</div>
+        </div>
+
+        <div className="container">
           <div>
             <p className="description">Short description for image 1</p> 
               <Link href="/photography">
