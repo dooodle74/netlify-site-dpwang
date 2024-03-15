@@ -44,6 +44,7 @@ code {
 .column {
   flex: 1;
   align-items: center;
+  justify-content: center;
   margin: 0 40px; /* Adjust margin between columns */
 }
 
@@ -53,7 +54,6 @@ code {
 }
 
 .subtitle {
-  margin-top: 9px;
   font-size: 36px;
   text-align: center;
   font-weight: bold;
@@ -74,7 +74,7 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
+  align-items: center;
 }
 
 .button:hover {
