@@ -37,7 +37,7 @@ code {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between; /* Adjust spacing between columns */
 }
 
