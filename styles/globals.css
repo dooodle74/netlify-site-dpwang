@@ -39,7 +39,7 @@ code {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between; /* Adjust spacing between columns */
-  position: fixed;
+  position: relative;
 }
 
 .column {
