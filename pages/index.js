@@ -15,15 +15,19 @@ export default function Home() {
         <Header title="Welcome to my app!" />
 
         <div className="menu">
-          <p className="description">Short description for image 1</p> 
-            <Link href="/photography">
-              <button className="button">Button 1</button> 
-            </Link>
-            
+          <div>
+            <p className="description">Short description for image 1</p> 
+              <Link href="/photography">
+                <button className="button">Button 1</button> 
+              </Link>
+          </div>
+
+          <div>
             <p className="description">Short description for image 2</p> 
-            <Link href="/projects">
-              <button className="button">Button 2</button> 
-            </Link>
+              <Link href="/projects">
+                <button className="button">Button 2</button> 
+              </Link>
+          </div>
         </div>
 
       </main>
