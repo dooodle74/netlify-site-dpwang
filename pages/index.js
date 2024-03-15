@@ -21,7 +21,7 @@ export default function Home() {
             <p className="subtitle">Projects</p> 
             <p className="description">i code</p> 
             <Link href="/photography">
-              <button className="button">Button 1</button> 
+              <button className="button">See Projects</button> 
             </Link>
           </div>
 
@@ -31,7 +31,7 @@ export default function Home() {
             <p className="subtitle">Photography</p> 
             <p className="description">i take photos</p> 
             <Link href="/projects">
-              <button className="button">Button 2</button> 
+              <button className="button">See Gallery</button> 
             </Link>
           </div>
         </div>
