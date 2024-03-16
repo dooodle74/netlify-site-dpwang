@@ -9,10 +9,10 @@ export default function Photography() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const clientID = process.env.NEXT_PUBLIC_IMGUR_CLIENT_ID;
+        const accessToken = process.env.NEXT_PUBLIC_IMGUR_ACCESS_TOKEN;
         const response = await fetch('https://api.imgur.com/3/album/xINOrOR/images', {
           headers: {
-            Authorization: 'Client-ID ${clientID}', 
+            Authorization: 'Bearer ${accessToken}', 
           },
         });
         const data = await response.json();
@@ -37,7 +37,7 @@ export default function Photography() {
       </Head>
 
       <main>
-      <Header title="Welcome to Photography Page!" />
+        <Header title="Welcome to Photography Page!" />
         <div className="gallery">
           {images.map((image) => (
             <img key={image.id} src={image.link} alt={image.name} />
