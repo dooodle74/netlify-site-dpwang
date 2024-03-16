@@ -39,8 +39,11 @@ export default function Photography() {
       <main>
         <Header title="Welcome to Photography Page!" />
         <div className="gallery">
-          {images.map((image) => (
-            <img key={image.id} src={image.link} alt={image.name} />
+          {images.map((image, index) => (
+            <div className="image-container" key={image.id}>
+              <img src={image.link} alt={image.name} />
+              <p className="subtitle">{image.name}</p>
+            </div>
           ))}
         </div>
       </main>
