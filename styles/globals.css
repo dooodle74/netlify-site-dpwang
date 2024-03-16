@@ -86,7 +86,9 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 50%;
+  max-width: 800px;
+  width: 100%;
+  min-width: auto;
 }
 
 div.gallery:hover {
