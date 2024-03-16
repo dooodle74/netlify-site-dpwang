@@ -81,3 +81,13 @@ code {
 .button:hover {
   background-color: #0056b3; /* Darker shade of blue on hover */
 }
+
+.image-container {
+  max-width: 400px; /* Set maximum width for each image container */
+  margin: 0 auto; /* Center the image container horizontally */
+  text-align: center; /* Center the contents (image and subtitle) horizontally */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+}
