@@ -16,7 +16,7 @@ export default function Projects() {
         <p className="description">
           This is the content of the other page.
         </p>
-        <Link href="/dailypi/current.html">
+        <Link href="/dailypi/index.html">
           <button className="button">Daily Pi</button> 
         </Link>
       </main>
