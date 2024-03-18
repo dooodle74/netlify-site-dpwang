@@ -129,3 +129,41 @@ div.desc {
   font-size: 108px;
   line-height: 0;
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section, .right-section {
+  display: flex;
+}
+
+.left-section a, .right-section a {
+  margin-right: 10px;
+}
+
+/* Additional styling for buttons */
+.btn {
+  padding: 8px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
