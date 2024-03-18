@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Link from 'next/link';
 
 export default function Projects() {
   return (
@@ -15,6 +16,9 @@ export default function Projects() {
         <p className="description">
           This is the content of the other page.
         </p>
+        <Link href="/dailypi">
+          <button className="button">Daily Pi</button> 
+        </Link>
       </main>
 
       <Footer />
