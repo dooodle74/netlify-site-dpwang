@@ -7,12 +7,12 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Other Page</title>
+        <title>Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to Other Page!" />
+        <Header title="Projects" />
         <p className="description">
           This is the content of the other page.
         </p>
