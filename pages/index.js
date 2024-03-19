@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my homepage" />
+        <Header/>
 
         <div className="columns"> 
           {/* First Column */}

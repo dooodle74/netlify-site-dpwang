@@ -46,7 +46,7 @@ export default function Photography() {
       </Head>
 
       <main>
-        <Header title="Welcome to Photography Page!" />
+        <Header />
         <div className="gallery">
           {images.map((image) => (
             <img key={image.id} src={image.link} alt={image.name} />

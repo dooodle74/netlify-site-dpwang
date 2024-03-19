@@ -12,7 +12,7 @@ export default function Projects() {
       </Head>
 
       <main>
-        <Header title="Projects" />
+        <Header/>
         <p className="description">
           This is the content of the other page.
         </p>
