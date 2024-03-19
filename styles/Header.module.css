@@ -1,8 +1,8 @@
-body {
+.body {
   background-color:white;
 }
 
-ul {
+.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -10,11 +10,11 @@ ul {
   background-color: #38444d;
 }
 
-li {
+.li {
   float: left;
 }
 
-li a, .dropbtn {
+.li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -22,7 +22,7 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
