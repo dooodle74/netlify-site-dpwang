@@ -151,10 +151,6 @@ ul.nav {
   padding: 0;
   overflow: hidden;
   background-color: #38444d;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: auto;
 }
 
 ul.nav li {
