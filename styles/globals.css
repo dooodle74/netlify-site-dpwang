@@ -49,6 +49,7 @@ code {
   justify-content: center;
   max-width: 400px;
   margin: 0 40px; /* Adjust margin between columns */
+  background-color: #00AAAA;
 }
 
 .description {
