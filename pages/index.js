@@ -13,6 +13,7 @@ export default function Home() {
 
       <main>
         <Header/>
+        <h1>Hello!</h1>
         <div className="columns"> 
           {/* First Column */}
           <div className="column"> 
