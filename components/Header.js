@@ -1,11 +1,14 @@
-// Header.js
-import React from 'react';
-import styles from '/styles/Header.module.css';
-
-const Header = () => {
-  return(
-    <p>hello</p>
+export default function Header({ title }) {
+  return (
+    <header>
+      <h1 className="title">{title}</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/photography">Photography</a></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
-
-export default Header;
