@@ -7,7 +7,7 @@ export default function Header() {
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
         <div class="dropdown-content">
-          <a href="/pages/projects.js">Link 1</a>
+          <a href="/projects">Link 1</a>
         </div>
       </li>
     </ul>
