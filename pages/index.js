@@ -13,10 +13,6 @@ export default function Home() {
 
       <main>
         <Header/>
-        <div className="fullWidthSection">
-          hello
-        </div>
-
         <div className="columns"> 
           {/* First Column */}
           <div className="column"> 
