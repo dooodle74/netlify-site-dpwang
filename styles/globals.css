@@ -105,31 +105,6 @@ div.desc {
   text-align: center;
 }
 
-.info {
-  font-size: 20px;
-  line-height: 1.5;
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  background-color: #f0f0f0; 
-  color: black;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.regular {
-  text-align: center; 
-  font-size: 28px;
-  line-height: 0.8;
-}   
-
-.focus {
-  text-align: center; 
-  font-weight: bold; 
-  font-size: 108px;
-  line-height: 0;
-}
-
 .fixed-top {
   position: fixed;
   top: 0;

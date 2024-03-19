@@ -13,6 +13,9 @@ export default function Home() {
 
       <main>
         <Header/>
+        <nav>
+          hello
+        </nav>
 
         <div className="columns"> 
           {/* First Column */}
