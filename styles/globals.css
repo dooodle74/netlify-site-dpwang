@@ -49,8 +49,7 @@ code {
   justify-content: center;
   max-width: 400px;
   margin: 0 40px; /* Adjust margin between columns */
-  background-color: #00CCCC;
-  padding: 10px 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .description {
@@ -80,7 +79,8 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .button:hover {
@@ -135,6 +135,7 @@ ul.nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 ul.nav li {
