@@ -13,9 +13,9 @@ export default function Home() {
 
       <main>
         <Header/>
-        <nav>
+        <div className="fullWidthSection">
           hello
-        </nav>
+        </div>
 
         <div className="columns"> 
           {/* First Column */}

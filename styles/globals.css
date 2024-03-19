@@ -147,3 +147,9 @@ ul.nav li a, .dropbtn {
 ul.nav li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
+
+.fullWidthSection {
+  width: 100%;
+  background-color: #007bff;
+  padding: 20px 0;
+}
