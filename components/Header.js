@@ -10,8 +10,8 @@ const Header = () => {
         <div class={styles.dropdown}>
           <a href="javascript:void(0)" class={styles.dropbtn}>Dropdown</a>
           <div class={styles.dropdown-content}>
-            <a href="/projects">Projects</a>
-            <a href="/photography">Photography</a>
+            <a href="/pages/projects">Projects</a>
+            <a href="/pages/photography">Photography</a>
           </div>
         </div>
         </div>
