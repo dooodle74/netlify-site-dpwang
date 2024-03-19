@@ -4,12 +4,7 @@ export default function Header() {
     <nav>
     <ul class="nav">
       <li><a href="/">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-        <div class="dropdown-content">
-          <a href="/projects">Link 1</a>
-        </div>
-      </li>
+      <li><a href="mailto:dpwang01@gmail.com">Contact</a></li>
     </ul>
     </nav>
     </header>
