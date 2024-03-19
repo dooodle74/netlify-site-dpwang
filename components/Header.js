@@ -1,22 +1,21 @@
 // Header.js
 import React from 'react';
+import styles from './Header.module.css '
 
 const Header = () => {
-  return (
-    <header className="fixed-top">
-      <div className="container">
-        <div className="left-section">
-          <a href="/" className="btn btn-primary">Home</a>
-          <a href="/projects" className="btn btn-primary">Projects</a>
-          <a href="/photography" className="btn btn-primary">Photography</a>
-        </div>
-        <div className="right-section">
-          <a href="https://linkedin.com" className="btn btn-primary">LinkedIn</a>
-          <a href="https://github.com" className="btn btn-primary">GitHub</a>
-          <a href="mailto:dpwang01@gmail.com" className="btn btn-primary">Contact</a>
-        </div>
-      </div>
-    </header>
+  return(
+    <body>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="/projects">Projects</a>
+            <a href="/photography">Photography</a>
+          </div>
+        </li>
+      </ul>
+      </body>
   );
 }
 
