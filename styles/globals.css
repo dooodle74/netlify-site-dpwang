@@ -39,6 +39,9 @@ code {
   align-items: flex-start;
   justify-content: space-between; /* Adjust spacing between columns */
   position: relative;
+  padding: 20px 20px;
+  border-top: 5px solid #38444d;
+  border-bottom: 5px solid #38444d;
 }
 
 .column {
@@ -146,7 +149,7 @@ ul.nav li a, .dropbtn {
 }
 
 ul.nav li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #0056b3;
 }
 
 .fullWidthSection {
