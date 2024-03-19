@@ -149,8 +149,8 @@ ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
+  overflow: hidden;
+  background-color: #38444d;
   position: fixed;
   top: 0;
   width: 100%;
