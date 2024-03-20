@@ -14,7 +14,8 @@ export default function Home() {
       <main>
         <Header/>
         <div className="fullWidthSection">
-          <h2>Welcome to David's Homepage!</h2>
+        <div className="halfWidthSection">
+          <h1>Welcome to David's Homepage!</h1>
           <div className="columns">
             <div className="column">
               <Link href="https://www.linkedin.com/in/dongpingwang/">
@@ -32,6 +33,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="columns"> 
