@@ -145,8 +145,8 @@ div.desc {
   align-items: center;
 }
 
-.halfWidthSection {
-  max-width: 800px;
+.smallWidthSection {
+  max-width: 300px;
   width: 100%;
 }
 
