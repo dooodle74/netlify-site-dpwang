@@ -138,7 +138,7 @@ div.desc {
   top: 60px; /* Adjust as needed to position it right below the header */
   width: 100%;
   background-color: #00FFFF; /* Your desired background color */
-  /* Other styles */
+  padding: 20px;
 }
 
 ul.nav {

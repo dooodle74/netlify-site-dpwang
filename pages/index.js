@@ -15,6 +15,7 @@ export default function Home() {
         <Header/>
         <div className="fullWidthSection">
         <h1>Welcome to David's Homepage!</h1>
+        </div>
         <div className="columns">
           <div className="column">
             <Link href="https://www.linkedin.com/in/dongpingwang/">
@@ -31,7 +32,6 @@ export default function Home() {
               <img src="/logo_email.png" alt="Send email to dpwang01@gmail.com" className="logo-centered" />
             </Link>
           </div>
-        </div>
         </div>
 
         <div className="columns"> 
