@@ -17,17 +17,17 @@ export default function Home() {
         <div className="halfWidthSection">
           <h1>Welcome to David's Homepage!</h1>
           <div className="columns">
-            <div className="column">
+            <div className="column-logo">
               <Link href="https://www.linkedin.com/in/dongpingwang/">
                 <img src="/logo_LinkedIn.png" alt="LinkedIn Pofile" className="logo-centered" />
               </Link>
             </div>
-            <div className="column">
+            <div className="column-logo">
             < Link href="https://github.com/dooodle74">
                 <img src="/logo_Github.png" alt="Github Pofile" className="logo-centered" />
               </Link>
             </div>
-            <div className="column">
+            <div className="column-logo">
               <Link href="mailto:dpwang01@gmail.com">
                 <img src="/logo_email.png" alt="Send email to dpwang01@gmail.com" className="logo-centered" />
               </Link>

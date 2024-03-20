@@ -51,6 +51,15 @@ code {
   padding: 10px 10px 20px 10px;
 }
 
+.column-logo {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  max-width: 40px;
+  margin: 0 5px; /* Adjust margin between columns */
+  padding: 0 5px;
+}
+
 .description {
   font-size: 16px;
   text-align: center;
