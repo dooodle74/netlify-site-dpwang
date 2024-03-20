@@ -129,7 +129,8 @@ div.desc {
 .fullWidthSection {
   width: 100%;
   background-color: #00FFFF; /* Your desired background color */
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+  text-align: center;
 }
 
 ul.nav {
