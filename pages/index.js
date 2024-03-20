@@ -15,6 +15,8 @@ export default function Home() {
         <Header/>
         <div className="fullWidthSection">
           <h1>Welcome to David's Homepage!</h1>
+        </div>
+        <div className="fullWidthSection">
           <div className="smallWidthSection">
             <div className="columns">
               <div className="column-logo">
