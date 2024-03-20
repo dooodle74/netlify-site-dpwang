@@ -29,7 +29,6 @@ code {
 .container {
   height: 100vh;
   width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -127,15 +126,7 @@ div.desc {
   color: white;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .fullWidthSection {
-  position: fixed;
-  top: 60px; /* Adjust as needed to position it right below the header */
   width: 100%;
   background-color: #00FFFF; /* Your desired background color */
   padding: 20px;
