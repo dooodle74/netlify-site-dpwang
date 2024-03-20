@@ -57,7 +57,7 @@ code {
 }
 
 .subtitle {
-  font-size: 36px;
+  font-size: 24px;
   text-align: center;
   font-weight: bold;
 }
@@ -73,7 +73,7 @@ code {
 .logo-centered {
   display: block; /* Ensure the image is treated as a block element */
   margin: 0 auto; /* Set top and bottom margins to 0 and left and right margins to auto */
-  width: 50px; /* Adjust the width as needed */
+  width: 40px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   line-height: 1;
 }
