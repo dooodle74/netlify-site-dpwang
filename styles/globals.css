@@ -133,6 +133,14 @@ div.desc {
   align-items: center;
 }
 
+.fullWidthSection {
+  position: fixed;
+  top: 60px; /* Adjust as needed to position it right below the header */
+  width: 100%;
+  background-color: #00FFFF; /* Your desired background color */
+  /* Other styles */
+}
+
 ul.nav {
   list-style-type: none;
   margin: 0;
@@ -160,10 +168,4 @@ ul.nav li a, .dropbtn {
 
 ul.nav li a:hover, .dropdown:hover .dropbtn {
   background-color: #0056b3;
-}
-
-.fullWidthSection {
-  width: 100%;
-  background-color: #00FFFF;
-  padding: 20px 0;
 }

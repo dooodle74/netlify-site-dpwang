@@ -13,8 +13,8 @@ export default function Home() {
 
       <main>
         <Header/>
-        <h1>Welcome to David's Homepage!</h1>
         <div className="fullWidthSection">
+        <h1>Welcome to David's Homepage!</h1>
         <div className="columns">
           <div className="column">
             <Link href="https://www.linkedin.com/in/dongpingwang/">
