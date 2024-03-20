@@ -131,6 +131,12 @@ div.desc {
   background-color: #00FFFF; /* Your desired background color */
   padding: 0 20px 20px 20px;
   text-align: center;
+  justify-content: center;
+}
+
+.halfWidthSection {
+  width: 100%;
+  max-width: 800px;
 }
 
 ul.nav {
