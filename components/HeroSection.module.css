@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 50vh;
+    height: auto;
     position: fixed; /* or position: absolute; */
     top: 0; /* Position it at the top of the viewport */
     left: 0; /* Position it at the left edge of the viewport */
