@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>David Wang</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/dw-black.png" />
       </Head>
       <main>
         <Header />
