@@ -19,11 +19,14 @@
 
 .title {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 96px; /* Adjust the font size as needed */
+    font-size: 4em; /* Adjust the font size as needed */
     font-weight: bold;
+    line-height: 0.5;
 }
 
 .subtitle {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: 100;
+    line-height: 1;
 }
