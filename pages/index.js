@@ -13,7 +13,9 @@ export default function Home() {
       </Head>
       <main>
         <HeroSection />
-        <HeroSection />
+        <AboutMeSection />
+        <AboutMeSection />
+        <AboutMeSection />
         <AboutMeSection />
         <Footer />
       </main>
