@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import HeroSection from '@components/HeroSection';
-import Footer from '@components/Footer'
+import AboutMeSection from '@components/AboutMeSection';
+import Footer from '@components/Footer';
 import Link from 'next/link';
 
 export default function Home() {
@@ -12,9 +13,6 @@ export default function Home() {
       </Head>
       <main>
         <HeroSection />
-        <div>
-          hello
-        </div>
         <Footer />
       </main>
     </div>
