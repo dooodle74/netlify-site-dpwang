@@ -11,7 +11,6 @@ export default function Home() {
         <title>David Wang</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeroSection />
       <main>
         <HeroSection />
       </main>
