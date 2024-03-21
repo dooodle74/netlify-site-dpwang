@@ -8,7 +8,6 @@ const HeroSection = () => {
         <p className={styles.pretitle}>HELLO, I AM</p>
         <h1 className={styles.title}>DAVID WANG</h1>
         <h2 className={styles.subtitle}>WELCOME TO MY HOMEPAGE</h2>
-        <p className={styles.subtitle}> </p>
       </div>
     </section>
   );
