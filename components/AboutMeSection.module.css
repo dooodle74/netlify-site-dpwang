@@ -1,0 +1,18 @@
+.section {
+    width: 100vw;
+    max-width: 1200px;
+    position: relative; 
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em; 
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    line-height: 1;
+    text-align: center;
+}
+
