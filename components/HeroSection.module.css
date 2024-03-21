@@ -20,7 +20,7 @@
 .title {
     font-family: 'Courier New', Courier, monospace;
     font-size: 5em; /* Adjust the font size as needed */
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 0.1em;
     margin-bottom: 0.2em;
     line-height: 1;
@@ -32,7 +32,7 @@
     font-size: 1.5em; /* Adjust the font size as needed */
     font-weight: 200;
     line-height: 1;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .pretitle {
