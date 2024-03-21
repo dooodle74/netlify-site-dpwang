@@ -8,6 +8,7 @@
 }
 
 .title {
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3em; 
     margin-top: 0.1em;
