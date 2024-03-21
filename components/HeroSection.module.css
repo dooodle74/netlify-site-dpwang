@@ -16,4 +16,14 @@
 .content {
     text-align: center;
 }
-  
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em; /* Adjust the font size as needed */
+}
