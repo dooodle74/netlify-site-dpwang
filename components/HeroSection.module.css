@@ -23,7 +23,8 @@
     font-weight: bold;
     margin-top: 0.1em;
     margin-bottom: 0.2em;
-    line-height: 0.8;
+    line-height: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
@@ -35,7 +36,7 @@
 
 .pretitle {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em; /* Adjust the font size as needed */
+    font-size: 1.2em; /* Adjust the font size as needed */
     font-weight: 100;
     line-height: 1;
 }
