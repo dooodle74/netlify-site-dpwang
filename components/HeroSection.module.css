@@ -1,10 +1,10 @@
-.hero-section {
+.section {
     background-image: url('/bg-home.jpg'); /* Path to the image relative to the public directory */
     background-size: cover;
     background-position: center;
 }
 
-.hero-content {
+.content {
     text-align: center;
 }
   
