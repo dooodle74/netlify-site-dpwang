@@ -6,7 +6,9 @@ const AboutMeSection = () => {
     <section id="about" className={styles.section}>
       <div className={styles.title}>About Me</div>
       <div className={styles.content}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Welcome to my corner of the web! My name is David, and I'm currently a second-year student at the University of Virginia, pursuing a double major in Computer Science and Mathematics. I am an aspiring software developer and would like to leverage my skills and knowledge to contribute meaningfully to society. My goal is to immerse myself in diverse projects, tackle challenging problems, and continuously learn and grow as a developer. 
+
+        In addition to my love for all things tech, I have a creative side that finds expression through photography. As an amateur photographer, I enjoy capturing the beauty of the world around me and sharing those moments with others. Feel free to check out some of my work <Link href="/photography"><a>here</a></Link>.
       </div>
     </section>
   );
