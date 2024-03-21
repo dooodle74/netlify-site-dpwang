@@ -26,7 +26,14 @@
 
 .subtitle {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em; /* Adjust the font size as needed */
+    font-size: 1.5em; /* Adjust the font size as needed */
     font-weight: 100;
-    line-height: 1;
+    line-height: 0.5;
+}
+
+.pretitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em; /* Adjust the font size as needed */
+    font-weight: 100;
+    line-height: 0.5;
 }
