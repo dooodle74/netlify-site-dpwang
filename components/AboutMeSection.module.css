@@ -2,7 +2,6 @@
     width: 100vw;
     max-width: 1200px;
     position: relative; 
-    display: flex;
     align-items: center; /* Vertically center the content */
     justify-content: center;
 }
