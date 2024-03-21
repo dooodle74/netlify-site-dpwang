@@ -32,33 +32,3 @@ code {
   display: flex;
   flex-direction: column;
 }
-
-
-ul.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #38444d;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-ul.nav li {
-  float: left;
-}
-
-ul.nav li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.nav li a:hover, .dropdown:hover .dropbtn {
-  background-color: #0056b3;
-}

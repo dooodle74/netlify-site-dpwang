@@ -7,6 +7,9 @@
     position: fixed; /* or position: absolute; */
     top: 0; /* Position it at the top of the viewport */
     left: 0; /* Position it at the left edge of the viewport */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
     z-index: -1; 
 }
 
