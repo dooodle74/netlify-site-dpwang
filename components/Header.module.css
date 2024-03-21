@@ -3,13 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #333; /* Adjust the background color as needed */
     color: white; /* Text color */
   }
   
   .logo img {
-    height: 20px; /* Adjust the height of the logo as needed */
+    height: 30px; /* Adjust the height of the logo as needed */
   }
   
   .navigation a {

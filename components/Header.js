@@ -8,7 +8,7 @@ const Header = () => {
       <div className={styles.logo}>
         <Link href="/">
           <a>
-            <img src="/dw-white.png" alt="Logo" />
+            <img src="/dw_text-white.png" alt="Logo" />
           </a>
         </Link>
       </div>
