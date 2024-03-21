@@ -17,17 +17,18 @@
 
 .title {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5em; /* Adjust the font size as needed */
-    font-weight: 600;
+    font-size: 5em; 
+    font-weight: bold;
+    color: solid rgba (0, 0, 0, 0.8);
     margin-top: 0.1em;
     margin-bottom: 0.2em;
     line-height: 1;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em; /* Adjust the font size as needed */
+    font-size: 1.5em; 
     font-weight: 200;
     line-height: 1;
     padding-bottom: 2em;
@@ -35,7 +36,7 @@
 
 .pretitle {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em; /* Adjust the font size as needed */
+    font-size: 1.2em; 
     font-weight: 100;
     line-height: 1;
 }
