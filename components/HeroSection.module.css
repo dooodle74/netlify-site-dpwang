@@ -1,6 +1,5 @@
 .hero-section {
-    background-image: url('/bg-home.jpg'); /* Path to the image relative to the public directory */
-    background-size: cover;
+    background-color: black;
     background-position: center;
     color: #fff; /* Adjust text color for visibility */
 }
