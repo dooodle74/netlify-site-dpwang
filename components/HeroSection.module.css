@@ -2,6 +2,11 @@
     background-image: url('/bg-home.jpg'); /* Path to the image relative to the public directory */
     background-size: cover;
     background-position: center;
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    position: fixed; /* or position: absolute; */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left edge of the viewport */
+    z-index: -1; /* Ensure it's behind other content */
 }
 
 .content {
