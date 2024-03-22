@@ -1,0 +1,38 @@
+.section {
+    width: 100vw;
+    max-width: 1200px;
+    position: relative; 
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
+    padding: 1rem;
+}
+
+.title {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em; 
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    line-height: 1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #222;
+}
+
+.subsection {
+    width: 100%;
+}
+
+.subsection-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.subsection-subtitle {
+    text-align: left;
+}
+
+.subsection-body {
+    text-align: left;
+}

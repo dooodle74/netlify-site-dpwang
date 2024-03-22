@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@components/Header';
 import HeroSection from '@components/homepage/HeroSection';
 import AboutMeSection from '@components/homepage/AboutMeSection';
+import ResumeSection from '@components/homepage/ResumeSection';
 import Footer from '@components/Footer';
 import Link from 'next/link';
 
@@ -16,7 +17,7 @@ export default function Home() {
         <Header />
         <HeroSection />
         <AboutMeSection />
-        <AboutMeSection />
+        <ResumeSection />
         <AboutMeSection />
         <AboutMeSection />
         <Footer />
