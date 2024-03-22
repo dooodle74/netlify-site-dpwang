@@ -6,6 +6,7 @@ const ResumeSection = () => {
   return (
     <section id="experience" className={styles.section}>
         <div className={styles.title}>Experience</div>
+        
         <div className={styles.subsection}>
             <div className={styles.subsectionTitle}>Software Engineer Intern, <Link href='https://ev.buaa.edu.cn/'><a>Beihang University</a></Link></div>
             <div className={styles.subsectionSubtitle}>June 2023 - July 2023</div>

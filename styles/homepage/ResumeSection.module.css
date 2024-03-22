@@ -25,9 +25,8 @@
     font-weight: normal;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2em;
     font-size: 1.2em;
-    margin-bottom: 10px;
 }
 
 .subsectionTitle {
@@ -41,5 +40,20 @@
 
 .subsectionBody {
     text-align: left;
-    margin-top: 5px;
+    margin-top: 1em;
 }
+
+a {
+    text-decoration: none; /* Remove underlines */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  
+  /* Custom link styles */
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #007bff; /* Change color on hover */
+  }
+  
+  a:active {
+    color: #0056b3; /* Change color when clicked */
+  }
