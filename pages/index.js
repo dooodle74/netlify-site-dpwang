@@ -15,10 +15,12 @@ export default function Home() {
       <main>
         <Header />
         <HeroSection />
-        <AboutMeSection />
-        <AboutMeSection />
-        <AboutMeSection />
-        <AboutMeSection />
+        <body>
+          <AboutMeSection />
+          <AboutMeSection />
+          <AboutMeSection />
+          <AboutMeSection />
+        </body>
         <Footer />
       </main>
     </div>
