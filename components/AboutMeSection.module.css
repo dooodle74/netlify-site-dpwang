@@ -4,6 +4,7 @@
     position: relative; 
     align-items: center; /* Vertically center the content */
     justify-content: center;
+    padding: 1rem;
 }
 
 .title {
