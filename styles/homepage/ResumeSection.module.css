@@ -23,6 +23,10 @@
 .subsection {
     width: 100%;
     font-weight: normal;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
 .subsectionTitle {
