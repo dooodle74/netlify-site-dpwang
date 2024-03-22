@@ -24,15 +24,15 @@
     width: 100%;
 }
 
-.subsection-title {
+.subsectionTitle {
     text-align: left;
     font-weight: bold;
 }
 
-.subsection-subtitle {
+.subsectionSubtitle {
     text-align: left;
 }
 
-.subsection-body {
+.subsectionBody {
     text-align: left;
 }
