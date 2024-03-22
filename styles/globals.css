@@ -32,3 +32,18 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+a.customlink {
+  text-decoration: none; /* Remove underlines */
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Custom link styles */
+a.customlink {
+  text-decoration: underline; /* Underline on hover */
+  color: #007bff; /* Change color on hover */
+}
+
+a.customlink {
+  color: #0056b3; /* Change color when clicked */
+}
