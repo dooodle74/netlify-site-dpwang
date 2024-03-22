@@ -27,6 +27,7 @@
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .subsectionTitle {
@@ -40,4 +41,5 @@
 
 .subsectionBody {
     text-align: left;
+    margin-top: 5px;
 }

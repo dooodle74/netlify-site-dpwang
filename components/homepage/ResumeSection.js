@@ -13,6 +13,14 @@ const ResumeSection = () => {
                 Interned for a simulator team at the university. Implemented optimization solutions that determine effective loading instructions for cargo aircraft, which increased efficiency by 40% while maintaining accuracy. 
             </div>
         </div>
+
+        <div className={styles.subsection}>
+            <div className={styles.subsectionTitle}>Administrator and Development Lead, <Link href='https://fandom.com/'><a>Fandom</a></Link></div>
+            <div className={styles.subsectionSubtitle}>March 2021 - August 2021</div>
+            <div className={styles.subsectionBody}>
+                Administrator and lead software developer for the RR3 Fandom Wiki. Our volunteer team worked on refining data input, storage, management, user interface, and automation in a Fandom environment, improving user and editor experience on the platform.
+            </div>
+        </div>
     </section>
   );
 };
