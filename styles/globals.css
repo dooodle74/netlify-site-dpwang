@@ -39,11 +39,12 @@ a.customlink {
 }
 
 /* Custom link styles */
-a.customlink {
+a.customlink:hover {
   text-decoration: underline; /* Underline on hover */
   color: #007bff; /* Change color on hover */
 }
 
-a.customlink {
+a.customlink:active {
+  text-decoration: none;
   color: #0056b3; /* Change color when clicked */
 }
