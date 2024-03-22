@@ -1,5 +1,5 @@
 .section {
-    background-image: url('/bg-home.jpg'); /* Path to the image relative to the public directory */
+    background-image: url('/static/background-homepage.jpg'); /* Path to the image relative to the public directory */
     background-size: cover;
     background-position: center;
     width: 100%;
