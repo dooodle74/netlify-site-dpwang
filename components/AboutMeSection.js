@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './AboutMeSection.module.css';
+import styles from '/styles/homepage/AboutMeSection.module.css';
 
 const AboutMeSection = () => {
   return (
