@@ -25,16 +25,19 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2em;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
 }
 
 .tile {
     width: 200px;
     height: 150px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border: 1px solid blue;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 40px;
     cursor: pointer;
   }
   
