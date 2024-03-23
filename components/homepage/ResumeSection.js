@@ -9,7 +9,7 @@ const ResumeSection = () => {
         <div className={styles.title}>Education</div>
 
         <div className={styles.subsection}>
-            <div className={styles.subsectionTitle}>Bachelor's in Computer Science and Mathematics, <Link href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><a>University of Virginia</a></Link></div>
+            <div className={styles.subsectionTitle}>Bachelor's in Computer Science and Mathematics, <Link href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><a>University of Virginia</a> </Link><Link href="/photography"><a>here</a></Link></div>
             <div className={styles.subsectionSubtitle}>August 2022 - Present</div>
             <div className={styles.subsectionBody}>
                 Expected graduation: <i>June 2025.</i><br />
@@ -34,7 +34,7 @@ const ResumeSection = () => {
             <div className={styles.subsectionTitle}>Administrator and Development Lead, <Link href="https://fandom.com/" target="_blank" rel="noopener noreferrer"><a>Fandom</a></Link></div>
             <div className={styles.subsectionSubtitle}>March 2021 - August 2021</div>
             <div className={styles.subsectionBody}>
-                Administrator and lead software developer for the <Link href="https://rr3.fandom.com/wiki/Special:Contributions/DpWang74"  target="_blank" rel="noopener noreferrer">Real Racing 3 Fandom <a class="customlink">Wiki</a></Link>. Our volunteer team worked on refining data storage on the Wikia platform to reduce redundant data, improving user and editor experience.
+                Administrator and lead software developer for the Real Racing 3 Fandom <Link href="https://rr3.fandom.com/wiki/Special:Contributions/DpWang74" target="_blank" rel="noopener noreferrer"><a>Wiki</a></Link>. Our volunteer team worked on refining data storage on the Wikia platform to reduce redundant data, improving user and editor experience.
             </div>
         </div>
     </section>
