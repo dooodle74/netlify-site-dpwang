@@ -3,6 +3,7 @@ import Header from '@components/Header';
 import HeroSection from '@components/homepage/HeroSection';
 import AboutMeSection from '@components/homepage/AboutMeSection';
 import ResumeSection from '@components/homepage/ResumeSection';
+import ExploreSection from '@components/homepage/ExploreSection';
 import Footer from '@components/Footer';
 import Link from 'next/link';
 
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <AboutMeSection />
         <ResumeSection />
+        <ExploreSection />
         <Footer />
       </main>
     </div>

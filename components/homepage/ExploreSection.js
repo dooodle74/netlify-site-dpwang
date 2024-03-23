@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '/styles/homepage/Explore.module.css';
+import styles from '/styles/homepage/ExploreSection.module.css';
 
 const Explore = () => {
   return(
