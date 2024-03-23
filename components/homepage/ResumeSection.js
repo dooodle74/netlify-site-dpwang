@@ -17,6 +17,8 @@ const ResumeSection = () => {
                 <i>Relevant Coursework: Data Structures and Algorithms, Computer Systems and Organization, Software Engineering, Discrete Math, Theory of Computation, Abstract Algebra, Real Analysis, Stochastic Processes, Mathemetical Statistics</i>
             </div>
         </div>
+        
+        <div className="divider" />
 
         <div className={styles.title}>Experience</div>
 
