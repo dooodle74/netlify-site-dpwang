@@ -4,12 +4,11 @@ import Link from 'next/link';
 
 const ResumeSection = () => {
   return (
-    <div className={styles.background}>
     <section id="resume" className={styles.section}>
         <div className={styles.title}>Education</div>
 
         <div className={styles.subsection}>
-            <div className={styles.subsectionTitle}>Bachelor's in Computer Science and Mathematics, <Link href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><a>University of Virginia</a> </Link><Link href="/photography"><a>here</a></Link></div>
+            <div className={styles.subsectionTitle}>Bachelor's in Computer Science and Mathematics, <Link href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><a>University of Virginia</a> </Link></div>
             <div className={styles.subsectionSubtitle}>August 2022 - Present</div>
             <div className={styles.subsectionBody}>
                 Expected graduation: <i>June 2025.</i><br />
@@ -38,7 +37,6 @@ const ResumeSection = () => {
             </div>
         </div>
     </section>
-    </div>
   );
 };
 
