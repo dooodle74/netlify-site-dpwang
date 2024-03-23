@@ -18,8 +18,6 @@ export default function Home() {
         <HeroSection />
         <AboutMeSection />
         <ResumeSection />
-        <AboutMeSection />
-        <AboutMeSection />
         <Footer />
       </main>
     </div>
