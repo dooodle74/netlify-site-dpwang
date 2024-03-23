@@ -11,6 +11,10 @@ const AboutMeSection = () => {
         <br /> <br />
         In addition to my love for all things tech, I have a creative side that finds expression through photography. As an amateur photographer, I enjoy capturing the beauty of the world around me and sharing those moments with others. Feel free to check out some of my work <Link href="/photography"><a>here</a></Link>.
       </div>
+      <div className={styles.iconContainer}>
+        <a href="https://www.linkedin.com/in/dongpingwang/" target="_blank" rel="noopener noreferrer"><img src="/static/icons/logo-LinkedIn-mono.png" alt="LinkedIn Profile" /></a>
+        <a href="https://github.com/dooodle74" target="_blank" rel="noopener noreferrer"><img src="/static/icons/logo-Github.png" alt="Github Profile" /></a>
+      </div>
     </section>
   );
 };
