@@ -33,14 +33,10 @@
     display: flex;
     align-items: center; 
     justify-content: center;
+    margin: 10px;
 }
 
 .iconContainer a{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.icon-container a img {
-    width: 20px;
-    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
