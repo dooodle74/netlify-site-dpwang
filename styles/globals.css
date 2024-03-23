@@ -38,7 +38,7 @@ code {
   max-width: 1000px;
   height: 1px; 
   background-color: rgba(0, 0, 0, 0.3); 
-  margin: 5px auto 10px auto; 
+  margin: 0 auto 15px auto; 
 }
 
 a.customlink {
