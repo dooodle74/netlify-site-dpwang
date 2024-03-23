@@ -1,9 +1,9 @@
 .footer {
-  width: 100vw;
+  width: 99%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: #333; /* Adjust the background color as needed */
   color: white; /* Text color */
 }
