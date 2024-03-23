@@ -1,5 +1,5 @@
 .section {
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     position: relative; 
     align-items: center; /* Vertically center the content */
