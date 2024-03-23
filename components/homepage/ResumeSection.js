@@ -6,6 +6,18 @@ const ResumeSection = () => {
   return (
     <div className={styles.background}>
     <section id="resume" className={styles.section}>
+        <div className={styles.title}>Education</div>
+
+        <div className={styles.subsection}>
+            <div className={styles.subsectionTitle}>Bachelor's in Computer Science and Mathematics, <Link href="https://https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><a class="customlink">University of Virginia</a></Link></div>
+            <div className={styles.subsectionSubtitle}>August 2022 - Present</div>
+            <div className={styles.subsectionBody}>
+                Expected graduation: June 2025.<br />
+                3.8 GPA, Dean's List.<br />
+                <i>Relevant Coursework: Data Structures and Algorithms, Computer Systems and Organization, Software Engineering, Discrete Math, Theory of Computation, Abstract Algebra, Real Analysis, Stochastic Processes, Mathemetical Statistics</i>
+            </div>
+        </div>
+
         <div className={styles.title}>Experience</div>
 
         <div className={styles.subsection}>

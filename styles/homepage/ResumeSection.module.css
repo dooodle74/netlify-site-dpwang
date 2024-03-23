@@ -22,12 +22,11 @@
     max-width: 1200px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3em; 
-    margin-top: 0.1em;
-    margin-bottom: 0.2em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
     line-height: 1;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
     color: #222;
 }
 
