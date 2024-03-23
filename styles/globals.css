@@ -41,18 +41,20 @@ code {
   margin: 0 auto 20px auto; 
 }
 
+/*
 a.customlink {
-  text-decoration: none; /* Remove underlines */
-  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; 
+  color: inherit; 
 }
 
-/* Custom link styles */
+
 a.customlink:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: #007bff; /* Change color on hover */
+  text-decoration: underline; 
+  color: #007bff; 
 }
 
 a.customlink:active {
   text-decoration: none;
-  color: #0056b3; /* Change color when clicked */
+  color: #0056b3; 
 }
+*/
