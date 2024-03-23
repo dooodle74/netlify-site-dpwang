@@ -13,7 +13,7 @@ const AboutMeSection = () => {
       </div>
       <div className={styles.iconContainer}>
         <a href="https://www.linkedin.com/in/dongpingwang/" target="_blank" rel="noopener noreferrer"><img src="/static/icons/logo-LinkedIn-mono.png" alt="LinkedIn Profile" width="20px" /></a>
-        <a href="https://github.com/dooodle74" target="_blank" rel="noopener noreferrer"><img src="/static/icons/logo-Github.png" alt="Github Profile" width="20px" /></a>
+        <a href="https://github.com/dooodle74/" target="_blank" rel="noopener noreferrer"><img src="/static/icons/logo-Github.png" alt="Github Profile" width="20px" /></a>
       </div>
     </section>
   );
