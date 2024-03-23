@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const ResumeSection = () => {
   return (
+    <div className={styles.background}>
     <section id="resume" className={styles.section}>
         <div className={styles.title}>Experience</div>
 
@@ -23,6 +24,7 @@ const ResumeSection = () => {
             </div>
         </div>
     </section>
+    </div>
   );
 };
 
