@@ -3,13 +3,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.6rem 1rem;
     background-color: #333; /* Adjust the background color as needed */
     color: white; /* Text color */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .logo img {
-    height: 24px; /* Adjust the height of the logo as needed */
+    height: 28px; /* Adjust the height of the logo as needed */
+    margin-top:0.3rem;
+    margin-right: 0.1rem;
   }
   
   .navigation a {

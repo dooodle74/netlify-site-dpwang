@@ -15,7 +15,8 @@
     line-height: 1;
     text-align: center;
     padding: 10px 0;
-    color: #222;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 0.8);
 }
 
 .content {
