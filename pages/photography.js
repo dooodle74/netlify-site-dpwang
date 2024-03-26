@@ -52,9 +52,8 @@ export default function Photography() {
             <img key={image.id} src={image.link} alt={image.name} />
           ))}
         </div>
+        <Footer />
       </main>
-
-      <Footer />
     </div>
   );
 }

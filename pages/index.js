@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/static/dw/logo-round-black.png" />
       </Head>
       <main>
-        <Header text={"hello"} link={"/photography"}/>
+        <Header />
         <HeroSection />
         <AboutMeSection />
         <ResumeSection />
