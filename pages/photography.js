@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+import styles from '/styles/PhotographyPage.module.css';
 
 const POLLING_INTERVAL = 600000; // Polling interval in milliseconds (e.g., 10 minutes)
 
@@ -47,7 +48,7 @@ export default function Photography() {
 
       <main>
         <Header />
-        <div className="gallery">
+        <div className={styles.gallery}>
           {images.map((image) => (
             <img key={image.id} src={image.link} alt={image.name} />
           ))}

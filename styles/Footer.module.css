@@ -1,6 +1,4 @@
 .footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -8,6 +6,7 @@
   padding: 1rem;
   background-color: #333; /* Adjust the background color as needed */
   color: white; /* Text color */
+  margin-top: auto;
 }
 
 .footer a {
