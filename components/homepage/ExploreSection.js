@@ -7,7 +7,7 @@ const Explore = () => {
     <section id="more" className={styles.section}>
 
         <div className={styles.container}>
-            <div class={styles.tile} onClick={() => window.location.href ='/projects'}>
+            <div className={styles.tile} onClick={() => window.location.href ='/projects'}>
                 <p>Projects</p>
             </div>
             <div className={styles.tile} onClick={() => window.location.href ='/photography'}>
