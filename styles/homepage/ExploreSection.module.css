@@ -39,6 +39,7 @@
     padding: 10px;
     margin: 40px;
     cursor: pointer;
+    text-align: center;
   }
   
   .tile:hover {
