@@ -16,12 +16,12 @@ export default function Projects() {
         <p className="description">
           This is the content of the other page.
         </p>
-        <Link href="/dailypi/index.html">
+        <Link href="/dailypi/index.html" legacyBehavior>
           <button className="button">Daily Pi</button> 
         </Link>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
