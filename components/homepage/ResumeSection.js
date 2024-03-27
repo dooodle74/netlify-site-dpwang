@@ -33,7 +33,7 @@ const ResumeSection = () => {
               <div className={styles.subsectionTitle}>Site Administrator, <Link href="https://fandom.com/" target="_blank" rel="noopener noreferrer">Fandom</Link></div>
               <div className={styles.subsectionSubtitle}>March 2021 - August 2021</div>
               <div className={styles.subsectionBody}>
-                  Administrator and lead web developer for the Real Racing 3 Fandom <Link href="https://rr3.fandom.com/wiki/Special:Contributions/DpWang74" target="_blank" rel="noopener noreferrer">Wiki</Link>. Our volunteer team worked on refining data storage on the Wikia platform to reduce redundant data, improving user and editor experience.
+                  Administrator and developer for the Real Racing 3 Fandom <Link href="https://rr3.fandom.com/wiki/Special:Contributions/DpWang74" target="_blank" rel="noopener noreferrer">Wiki</Link>. Our volunteer team worked on refining data storage and UI design on the Wikia platform, improving the experience of 40,000+ weekly visitors and hundreds of active editors. Personally contributed more than 8,000 edits.
               </div>
           </div>
       </section>
