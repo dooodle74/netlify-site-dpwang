@@ -2,7 +2,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 1080px;
-    margin: 1rem 2rem;
+    margin: 1rem auto;
     font-size: 1.2em;
 }
 
@@ -43,7 +43,16 @@
     background-color: #00CC66;
 }
 
-.section {
+.sectionMain {
+    width: 100vw;
+    position: relative; 
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sectionText {
     width: 100vw;
     position: relative; 
     align-items: center; /* Vertically center the content */
