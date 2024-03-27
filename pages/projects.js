@@ -16,7 +16,7 @@ export default function Projects() {
         <section className={styles.sectionText}>
           <div className={styles.title}>Projects</div>
           <div className={styles.content}>
-            Check out the projects I've worked on or contributed to, as well as <a style={{ color: '#FFA500' }}>work in progress</a> and <a style={{ color: '#3399FF' }}>planned</a> items.
+            Check out some stuff I <a style={{ color: '#00CC66' }}>made</a> or contributed to, as well as <a style={{ color: '#FFA500' }}>work in progress</a> and <a style={{ color: '#3399FF' }}>planned</a> projects.
           </div>
         </section>
 
@@ -32,7 +32,7 @@ export default function Projects() {
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
                 <b><Link href='/app/dailypi/index.html'>LIVE</Link></b><br/>
-                <Link href='https://github.com/dooodle74/2024_daily_pi' target="_blank" rel="noopener noreferrer">Github</Link>
+                <Link href='https://github.com/dooodle74/2024_daily_pi' target="_blank" rel="noopener noreferrer">Source</Link>
               </td>
             </tr>
 
@@ -45,7 +45,7 @@ export default function Projects() {
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
                 <b><Link href='https://project-b-09-c6d97ce8733a.herokuapp.com/' target="_blank" rel="noopener noreferrer">LIVE</Link></b><br/>
-                <Link href='https://github.com/uva-cs3240-s24/project-b-09' target="_blank" rel="noopener noreferrer">Github</Link>
+                <Link href='https://github.com/uva-cs3240-s24/project-b-09' target="_blank" rel="noopener noreferrer">Source</Link>
               </td>
             </tr>
 
@@ -57,13 +57,13 @@ export default function Projects() {
                 <div className={`${styles.status} ${styles.progress}`}></div>
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
-                <Link href='https://github.com/dooodle74/2024-edugains' target="_blank" rel="noopener noreferrer">Github</Link><br/>
+                <Link href='https://github.com/dooodle74/2024-edugains' target="_blank" rel="noopener noreferrer">Source</Link><br/>
               </td>
             </tr>
 
             <tr>
               <td className={styles.td}>
-                <b>Human Timer</b><br /> Allows users to see a dynamic timer of their lives. Likely to expand to other uses. 
+                <b>Human Timer</b><br /> Count up timer 
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
                 <div className={`${styles.status} ${styles.planned}`}></div>

@@ -53,8 +53,13 @@ export default function Photography() {
         <section className={styles.sectionText}>
           <div className={styles.title}>Photography</div>
           <div className={styles.content}>
-            I am an amateur photographer. My equipment includes a Canon <Link href="https://en.wikipedia.org/wiki/Canon_EOS_5D_Mark_II" target="_blank" rel="noopener noreferrer">EOS 5D Mark II</Link> camera body; Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_24-105mm_lens" target="_blank" rel="noopener noreferrer">EF 24-105mm 1:4</Link> zoom lens; Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_70-200mm_lens" target="_blank" rel="noopener noreferrer">EF 70-200mm 1:4</Link> zoom lens; Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_50mm_lens" target="_blank" rel="noopener noreferrer">EF 50mm 1:1.2</Link> prime lens. 
-            <br /><br />
+            I am an amateur photographer. My equipment includes:
+            <ul>
+              <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EOS_5D_Mark_II" target="_blank" rel="noopener noreferrer">EOS 5D Mark II</Link> camera body; </li>
+              <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_24-105mm_lens" target="_blank" rel="noopener noreferrer">EF 24-105mm 1:4</Link> zoom lens; </li>
+              <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_70-200mm_lens" target="_blank" rel="noopener noreferrer">EF 70-200mm 1:4</Link> zoom lens; </li>
+              <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EF_50mm_lens" target="_blank" rel="noopener noreferrer">EF 50mm 1:1.2</Link> prime lens. </li>
+            </ul>
             Check out some of my work in the gallery below, powered by the <Link href="https://apidocs.imgur.com/" target="_blank" rel="noopener noreferrer">Imgur API</Link>.
           </div>
         </section>
