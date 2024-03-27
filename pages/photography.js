@@ -61,7 +61,9 @@ export default function Photography() {
 
         <div className={styles.gallery}>
           {images.map((image) => (
-            <img key={image.id} src={image.link} alt={image.name} />
+            <a href={image.link} target="_blank" rel="noopener noreferrer" >
+              <img key={image.id} src={image.link} alt={image.name} />
+            </a>
           ))}
         </div>
         <Footer />
