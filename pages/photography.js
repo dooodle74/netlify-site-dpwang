@@ -11,11 +11,12 @@ const IMAGES_PER_PAGE = 9; // Number of images to display per page
 export default function Photography() {
   const [images, setImages] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
-  const fetchImages = async () => {
+  const fetchImages = async (pageNumber) => {
     try {
       const clientID = process.env.NEXT_PUBLIC_IMGUR_CLIENT_ID;
-      const response = await fetch('https://api.imgur.com/3/album/xINOrOR/images', {
+      const response = await fetch(`https://api.imgur.com/3/album/xINOrOR/images?page=${pageNumber}&limit=${IMAGES_PER_PAGE}`, {
         headers: {
           Authorization: `Client-ID ${clientID}`, 
         },
@@ -23,6 +24,9 @@ export default function Photography() {
       const data = await response.json();
       if (data.success) {
         setImages(data.data);
+        // Calculate the total number of pages
+        const totalCount = parseInt(response.headers.get('X-Total-Count'), 10);
+        setTotalPages(Math.ceil(totalCount / IMAGES_PER_PAGE));
       } else {
         console.error('Failed to fetch images:', data.status);
       }
@@ -32,26 +36,19 @@ export default function Photography() {
   };
 
   useEffect(() => {
-    // Fetch images initially when component mounts
-    fetchImages();
+    // Fetch images for the initial page when component mounts
+    fetchImages(currentPage);
 
     // Start polling at specified interval
-    const intervalId = setInterval(fetchImages, POLLING_INTERVAL);
+    const intervalId = setInterval(() => fetchImages(currentPage), POLLING_INTERVAL);
 
     // Clean up interval on component unmount
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array ensures effect runs only once on mount
+  }, [currentPage]); // Fetch images whenever currentPage changes
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-
-  // Calculate the images to display for the current page
-  const startIndex = (currentPage - 1) * IMAGES_PER_PAGE;
-  const selectedImages = images.slice(startIndex, startIndex + IMAGES_PER_PAGE);
-
-  // Calculate the total number of pages
-  const totalPages = Math.ceil(images.length / IMAGES_PER_PAGE);
 
   return (
     <div className="container">
@@ -79,7 +76,7 @@ export default function Photography() {
 
         <section className={styles.sectionMain}>
           <div className={styles.gallery}>
-            {selectedImages.map((image) => (
+            {images.map((image) => (
               <a key={image.id} href={image.link} target="_blank" rel="noopener noreferrer" >
                 <img src={image.link} alt={image.name} />
               </a>
@@ -100,6 +97,7 @@ export default function Photography() {
             ))}
           </nav>
         )}
+
         <Footer />
       </main>
     </div>
