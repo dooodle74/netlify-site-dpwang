@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 40px; /* Add bottom margin to create space between pagination and footer */
   }
   
   .pagination button {
