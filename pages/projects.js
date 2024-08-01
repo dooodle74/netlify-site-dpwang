@@ -41,11 +41,23 @@ export default function Projects() {
                 <b>Whistleblower</b><br /> Softare Architect for Spring 2024 CS 3240 whistleblower project. An app that allows students to report miscunduct on campus, and admins to process reports.
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
-                <div className={`${styles.status} ${styles.progress}`}></div>
+                <div className={`${styles.status} ${styles.published}`}></div>
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
                 <b><Link href='https://project-b-09-c6d97ce8733a.herokuapp.com/' target="_blank" rel="noopener noreferrer">LIVE</Link></b><br/>
-                <Link href='https://github.com/uva-cs3240-s24/project-b-09' target="_blank" rel="noopener noreferrer">Source</Link>
+                <Link href='https://github.com/dooodle74/2024-uva-whistleblower' target="_blank" rel="noopener noreferrer">Source</Link>
+              </td>
+            </tr>
+
+            <tr>
+              <td className={styles.td}>
+                <b>Yellowstone Lodging Tracker</b><br /> Tracks lodging availibility in Yellowstone National Park. Users will recieve email notifications for new vacancies based on custom date, location, and price settings.
+              </td>
+              <td className={`${styles.td} ${styles.centered}`}>
+                <div className={`${styles.status} ${styles.published}`}></div>
+              </td>
+              <td className={`${styles.td} ${styles.centered}`}>
+                <Link href='https://github.com/dooodle74/2024-yellowstone' target="_blank" rel="noopener noreferrer">Source</Link>
               </td>
             </tr>
 
@@ -63,7 +75,7 @@ export default function Projects() {
 
             <tr>
               <td className={styles.td}>
-                <b>Human Timer</b><br /> Count up timer 
+                <b>Clock App</b><br /> Timers, clocks, progress bars, etc. Interactive web page.
               </td>
               <td className={`${styles.td} ${styles.centered}`}>
                 <div className={`${styles.status} ${styles.planned}`}></div>

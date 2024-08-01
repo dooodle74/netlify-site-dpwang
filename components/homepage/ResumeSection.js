@@ -19,13 +19,33 @@ const ResumeSection = () => {
           
           <div className="divider" />
 
-          <div className={styles.title}>Experience</div>
+          <div className={styles.title}>Research Experience</div>
 
           <div className={styles.subsection}>
-              <div className={styles.subsectionTitle}>Software Engineer Intern, <Link href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</Link></div>
-              <div className={styles.subsectionSubtitle}>June 2023 - July 2023</div>
+              <div className={styles.subsectionTitle}>Researcher, <Link href="https://engineering.virginia.edu/labs-groups/infrastructure-simulation-sensing-and-evaluation-lab" target="_blank" rel="noopener noreferrer">IS2EE Lab</Link>, University of Virginia Department of Engineering</div>
+              <div className={styles.subsectionSubtitle}>May 2024 - Present</div>
               <div className={styles.subsectionBody}>
-                  Interned for a simulator team at Beihang University in Beijing. Implemented optimization solutions that determine effective loading patterns for cargo aircraft, which increased efficiency by 40% while maintaining a high-level of space efficiency. 
+              Implemented, developed, and tested Convolutional Neural Network (CNN) models. Contributed to a larger project aimed at developing an application for detecting structural integrity in civil engineering settings. Collaborated with a multidisciplinary team to ensure the models meet the practical needs of civil engineering applications.
+              </div>
+          </div>
+
+          <div className="divider" />
+
+          <div className={styles.title}>Work Experience</div>
+
+          <div className={styles.subsection}>
+              <div className={styles.subsectionTitle}>AI Model Trainer, <Link href="https://www.linkedin.com/company/dataannotationtech/" target="_blank" rel="noopener noreferrer">DataAnnotation</Link></div>
+              <div className={styles.subsectionSubtitle}>April 2024 - Present</div>
+              <div className={styles.subsectionBody}>
+                Performed high-quality data annotation for machine learning projects, including implementing programming solutions, image labeling, object detection, and text classification. Conducted rigorous testing of current AI models and those in production to evaluate performance and identify areas for improvement.
+              </div>
+          </div>
+
+          <div className={styles.subsection}>
+              <div className={styles.subsectionTitle}>Software Engineer Intern, Haidian Systems Engineering and Application Technology R&D Team</div>
+              <div className={styles.subsectionSubtitle}>June 2023 - August 2023</div>
+              <div className={styles.subsectionBody}>
+                  Interned for a systems engineering and AR simulator R&D team in Beijing's university district. I contributed to the design and implementation of optimization solutions that determine effective loading patterns for cargo aircraft, which increased efficiency by 40% while maintaining a high-level of space efficiency. 
               </div>
           </div>
 

@@ -100,7 +100,9 @@ export default function Photography() {
             ))}
           </nav>
         )}
+        <div style="width: 20px;">
 
+        </div>
         <Footer />
       </main>
     </div>
