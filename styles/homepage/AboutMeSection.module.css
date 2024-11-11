@@ -1,33 +1,3 @@
-.section {
-    width: 100vw;
-    position: relative; 
-    align-items: center; /* Vertically center the content */
-    justify-content: center;
-    padding: 1rem 2rem;
-}
-
-.title {
-    width: 100%;
-    max-width: 1080px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5em; 
-    margin: 0.1em auto 0.2em auto;
-    line-height: 1;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    color: rgba(34, 34, 34, 0.8);
-}
-
-.content {
-    width: 100%;
-    max-width: 1080px;
-    padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.2em;
-}
-
 .iconContainer {
     margin-left: auto;
     margin-right: auto;

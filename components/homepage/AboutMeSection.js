@@ -5,7 +5,7 @@ import styles from '/styles/homepage/AboutMeSection.module.css';
 const AboutMeSection = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container container11">
         <h1 className="titleGray">About Me</h1>
         Welcome to my corner of the web! My name is David, and I'm currently a second-year student at the University of Virginia, pursuing a double major in Computer Science and Mathematics. I am an aspiring software developer and would like to leverage my skills and knowledge to contribute meaningfully to society. My goal is to immerse myself in diverse projects, tackle challenging problems, and continuously learn and grow as a developer. 
         <br /> <br />
