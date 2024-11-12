@@ -2,24 +2,35 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '/styles/Header.module.css';
 
-const Header = ( {text, link} ) => {
+const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.sections}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <img src="/static/dw/logo-text-white.png" alt="Logo" />
-          </Link>
-        </div>
-        {text && (
-          <div className={styles.navigation}>
-            <Link href={ link }>
-              { text }
-            </Link>
-          </div>
-        )}
-      </div>
-    </header>
+    <ul className={styles.navbar}>
+      <li className={styles.navItem}>
+        <Link href="/" className={styles.navLink}>
+          Home
+        </Link>
+      </li>
+      <li className={styles.navItem}>
+        <Link href="/photography" className={styles.navLink}>
+          Photos
+        </Link>
+      </li>
+      <li className={styles.navItem}>
+        <Link href="/blogs" className={styles.navLink}>
+          Blog
+        </Link>
+      </li>
+      <li className={styles.navItem}>
+        <Link href="/app" className={styles.navLink}>
+          Apps
+        </Link>
+      </li>
+      {/* <li className={`${styles.navItem} ${styles.floatRight}`}>
+        <Link href="#about" className={styles.navLink}>
+          About
+        </Link>
+      </li> */}
+    </ul>
   );
 }
 

@@ -1,28 +1,28 @@
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.6rem 1rem;
-    background-color: #333; /* Adjust the background color as needed */
-    color: white; /* Text color */
-    font-size: 20px;
-    font-weight: bold;
-  }
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
 
-  .sections {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 28px; /* Adjust the height of the logo as needed */
-    margin-top:0.2rem;
-  }
-  
-  .navigation a {
-    margin-left: 1rem; /* Adjust the spacing between navigation items */
-    text-decoration: none;
-    color: inherit; /* Inherit text color from parent */
-  }
+.navItem {
+  float: left;
+}
+
+.navLink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navLink:hover:not(.active) {
+  background-color: #111;
+}
+
+.floatRight {
+  float: right;
+}

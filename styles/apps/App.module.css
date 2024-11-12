@@ -1,0 +1,38 @@
+.tileContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px; /* Space between tiles */
+  }
+  
+  .tile {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05); /* Pop-out effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .tile:active {
+    transform: scale(0.98); /* Press-down effect */
+  }
+  
+  @media (max-width: 768px) {
+    .tileContainer {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tileContainer {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }

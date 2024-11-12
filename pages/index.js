@@ -19,7 +19,7 @@ export default function Home() {
         <HeroSection />
         <AboutMeSection />
         <ResumeSection />
-        <ExploreSection />
+        {/* <ExploreSection /> */}
         <Footer />
       </main>
     </div>
