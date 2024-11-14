@@ -51,7 +51,7 @@ export default function Photography() {
   };
 
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Projects</title>
         <link rel="icon" href="/static/dw/logo-round-black.png" />
@@ -60,9 +60,9 @@ export default function Photography() {
       <main>
         <Header />
 
-        <section className={styles.sectionText}>
-          <div className={styles.title}>Photography</div>
-          <div className={styles.content}>
+        <section className="sectionGray">
+          <div className='container'>
+            <h1>Photography</h1>
             I am an amateur photographer. My equipment includes:
             <ul>
               <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EOS_5D_Mark_II" target="_blank" rel="noopener noreferrer">EOS 5D Mark II</Link> camera body; </li>
@@ -74,7 +74,7 @@ export default function Photography() {
           </div>
         </section>
 
-        <section className={styles.sectionMain}>
+        <section>
           <div className={styles.gallery}>
             {images.map((image) => (
               <a key={image.id} href={image.link} target="_blank" rel="noopener noreferrer" >
