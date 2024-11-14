@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import Header from '@components/apps/AppHeader';
+import Footer from '@components/apps/AppFooter';
 import Link from 'next/link';
 import styles from '/styles/apps/combinatorics/Combinatorics.module.css';
 import { useRouter } from 'next/router';
@@ -15,7 +15,7 @@ export default function CombinatoricsIndex() {
         <link rel="icon" href="/static/dw/logo-round-black.png" />
       </Head>
       <main>
-        <Header />
+        <Header text="Combinatorics" href="combinatorics" />
         <section className={styles.sectionText}>
           <div className={styles.title}>Combinatorics</div>
           <div className={styles.content}>

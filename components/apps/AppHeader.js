@@ -4,10 +4,22 @@ import styles from '/styles/Header.module.css';
 
 const Header = ({ text, href }) => {
   return (
-    <ul className={styles.navbar}>
+    <ul className={`${styles.navbar} ${styles.appColor}`}>
+      <li className={styles.navItem}>
+        <Link href="/app" className={styles.navLink}>
+          Apps
+        </Link>
+      </li>
+
+      <li className={styles.navItem}>
+        <Link href="/app" className={styles.navPipe}>
+          |
+        </Link>
+      </li>
+      
       <li className={styles.navItem}>
         <Link href={href} className={styles.navLink}>
-            App: {text}
+            {text}
         </Link>
       </li>
     </ul>

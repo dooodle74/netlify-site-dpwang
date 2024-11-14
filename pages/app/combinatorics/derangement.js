@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '@components/apps/AppHeader';
-import Footer from '@components/Footer';
+import Footer from '@components/apps/AppFooter';
 import styles from '/styles/apps/combinatorics/Combinatorics.module.css';
 import { useState } from 'react';
 import 'katex/dist/katex.min.css';

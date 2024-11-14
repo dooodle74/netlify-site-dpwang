@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import Header from '@components/apps/AppHeader';
+import Footer from '@components/apps/AppFooter';
 import Link from 'next/link';
 import styles from '/styles/apps/progress_bar/ProgressBar.module.css';
 

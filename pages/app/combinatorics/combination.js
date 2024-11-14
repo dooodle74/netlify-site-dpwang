@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import Header from '@components/apps/AppHeader';
+import Footer from '@components/apps/AppFooter';
 import styles from '/styles/apps/combinatorics/Combinatorics.module.css';
 import { useState } from 'react';
 import 'katex/dist/katex.min.css';
@@ -56,7 +56,7 @@ export default function CombinationPage() {
         <link rel="icon" href="/static/dw/logo-round-black.png" />
       </Head>
       <main>
-        <Header />
+        <Header text="Combinatorics" href="../combinatorics" />
         <div className={styles.sectionTitle}>
           <h1>Combinations (nCr)</h1>
 

@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.appColor {
+  background-color: #0F1E3D;
+}
+
 .navItem {
   float: left;
 }
@@ -16,6 +20,14 @@
   color: white;
   text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navPipe {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
   text-decoration: none;
 }
 
