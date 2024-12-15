@@ -13,7 +13,7 @@ const Explore = () => {
             <div className={styles.tile} onClick={() => window.location.href ='/photography'}>
                 <p>Photography</p>
             </div>
-            <div className={styles.tile} onClick={() => window.location.href ='/blogs'}>
+            <div className={styles.tile} onClick={() => window.location.href ='/blog'}>
                 <p>Blog</p>
             </div>
         </div>
