@@ -1,3 +1,8 @@
+.aLinkNoShow {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+  }
+
 .title {
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -8,6 +13,7 @@
     padding: 10px 0;
     font-weight: bold;
     color: rgba(34, 34, 34, 0.8);
+    text-decoration: none;
 }
 
 .subsection {
@@ -15,18 +21,29 @@
     font-weight: normal;
     padding: 10px 0;
     margin-bottom: 1em;
+    padding:10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.subsection:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .subsectionTitle {
     text-align: left;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .subsectionSubtitle {
     text-align: left;
+    text-decoration: none;
 }
 
 .subsectionText {
     text-align: left;
     margin-top: 1em;
+    text-decoration: none;
 }
