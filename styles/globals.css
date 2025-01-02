@@ -45,7 +45,10 @@ section {
 
 .container800 {
   max-width: 800px;
+}
 
+.container960 {
+  max-width: 960px;
 }
 
 .container11 {

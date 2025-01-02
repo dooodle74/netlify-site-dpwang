@@ -5,12 +5,11 @@ import Link from 'next/link';
 const ResumeSection = () => {
   return (
       <section id="resume" className="sectionGray">
-        <div className='container'>
-          {/*  container800 */}
+        <div className='container container960'>
             <div className={styles.title}>Education</div>
 
-            <Link className={styles.aLinkNoShow} href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer" legacyBehavior>
-            <a className={styles.subsection}>
+    
+            <div className={styles.subsection}>
                 <div className={styles.subsectionTitle}>Bachelor's Degree, <Link href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer">University of Virginia </Link></div>
                 <div className={styles.subsectionSubtitle}>
                     August 2022 - Present
@@ -22,8 +21,7 @@ const ResumeSection = () => {
                         <li>Relevant Coursework: <i>Data Structures and Algorithms, Computer Systems, Software Engineering, AI, Machine Learning, Discrete Mathematics, Abstract Algebra, Real Analysis, Probability, Stochastic Processes, Statistics.</i></li>
                     </ul>
                 </div>
-            </a>
-            </Link>
+            </div>
             
             <div className="divider" />
 
@@ -80,13 +78,42 @@ const ResumeSection = () => {
                 </div>
             </div>
 
+            
+          <div className="divider" />
+
+          <div className={styles.title}>Projects</div>
+            
+            <div className={styles.subsection}>
+                <div className={styles.subsectionTitle}>Project Lead, <Link href="https://github.com/dooodle74/uva-ml4va" target="_blank" rel="noopener noreferrer">ML4VA Chess Evaluation Project</Link></div>
+                <div className={styles.subsectionSubtitle}>September 2024 - December 2024</div>
+                <div className={styles.subsectionText}>
+                    <ul>
+                        <li>Led a team of 3 to develop a machine learning model to predict chess outcomes, leveraging Convolutional Neural Networks (CNNs) and advanced heuristic features trained on over 1 million board positions.</li>
+                        <li>Designed a model architecture achieving predictions within a 7% error margin compared to the Stockfish Engine.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className={styles.subsection}>
+                <div className={styles.subsectionTitle}>Software Architect, <Link href="https://github.com/dooodle74/2024-uva-whistleblower" target="_blank" rel="noopener noreferrer">UVA Whistleblower Project</Link></div>
+                <div className={styles.subsectionSubtitle}>January 2024 - May 2024</div>
+                <div className={styles.subsectionText}>
+                    <ul>
+                        <li>Collaborated with a team of 5 in an agile environment to design a campus safety reporting platform.</li>
+                        <li>Responsible for high level design choices, implemented core features using Django, PostgreSQL, and Amazon S3.</li>
+                    </ul>
+                </div>
+            </div>
+
+{/* 
             <div className={styles.subsection}>
                 <div className={styles.subsectionTitle}>Site Administrator, <Link href="https://fandom.com/" target="_blank" rel="noopener noreferrer">Fandom</Link></div>
                 <div className={styles.subsectionSubtitle}>March 2021 - August 2021</div>
                 <div className={styles.subsectionText}>
                     Administrator and developer for the Real Racing 3 Fandom <Link href="https://rr3.fandom.com/wiki/Special:Contributions/DpWang74" target="_blank" rel="noopener noreferrer">Wiki</Link>. Our volunteer team worked on refining data storage and UI design on the Wikia platform, improving the experience of 40,000+ weekly visitors and hundreds of active editors. Personally contributed more than 8,000 edits.
                 </div>
-            </div>
+            </div> */}
+
           </div>
       </section>
   );

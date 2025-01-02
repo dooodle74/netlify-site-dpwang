@@ -21,14 +21,10 @@
     font-weight: normal;
     padding: 10px 0;
     margin-bottom: 1em;
-    padding:10px;
+    /* padding:10px;
     transition: transform 0.3s, box-shadow 0.3s;
     text-decoration: none;
-}
-
-.subsection:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    border-radius: 10px; */
 }
 
 .subsectionTitle {
