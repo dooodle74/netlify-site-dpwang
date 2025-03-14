@@ -4,13 +4,13 @@ import Footer from '@components/apps/AppFooter';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function CombinatoricsIndex() {
+export default function SearchIndex() {
   const router = useRouter();
 
   return (
     <div>
       <Head>
-        <title>Combinatorics</title>
+        <title>Search Algorithms</title>
         <link rel="icon" href="/static/dw/logo-round-black.png" />
       </Head>
       <main>
