@@ -81,28 +81,29 @@ export default function SearchGrid() {
         <section className="section">
           <div className="container">
           <div className={styles.grid}
-            style={{ 
-            gridTemplateRows: `repeat(${NUM_ROWS}, 20px)`,
-            gridTemplateColumns: `repeat(${NUM_COLS}, 20px)`
-            }}>
-        {grid.map((row, i) => (
-            <div key={i} className={styles.gridRow}>
-            {row.map((cell, j) => (
-                <div
-                key={j}
-                className={`${styles.cell} 
-                            ${cell === 1 ? styles.obstacle : 
-                            cell === 'S' ? styles.start : 
-                            cell === 'E' ? styles.end : 
-                            cell === 'V' ? styles.visited : 
-                            cell === 'P' ? styles.path : ''}`} 
-                onClick={() => handleTileClick(i, j)}
-                onContextMenu={(e) => handleRightClick(e, i, j)}
-                ></div>
+                style={{ 
+                gridTemplateRows: `repeat(${NUM_ROWS}, 20px)`,
+                gridTemplateColumns: `repeat(${NUM_COLS}, 20px)`
+                }}>
+            {grid.map((row, i) => (
+                <div key={i} className={styles.gridRow}>
+                {row.map((cell, j) => (
+                    <div
+                    key={j}
+                    className={`${styles.cell} 
+                                ${cell === 1 ? styles.obstacle : 
+                                cell === 'S' ? styles.start : 
+                                cell === 'E' ? styles.end : 
+                                cell === 'V' ? styles.visited : 
+                                cell === 'P' ? styles.path : ''}`} 
+                    onClick={() => handleTileClick(i, j)}
+                    onContextMenu={(e) => handleRightClick(e, i, j)}
+                    ></div>
+                ))}
+                </div>
             ))}
             </div>
-        ))}
-        </div>
+
             <button onClick={runBFS}>Run BFS</button>
           </div>
         </section>

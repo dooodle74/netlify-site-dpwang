@@ -33,6 +33,6 @@
   }
   
   .path {
-    background: yellow;
+    background: yellow; /* Shortest path highlight */
   }
   

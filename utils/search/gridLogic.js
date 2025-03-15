@@ -45,14 +45,16 @@ export class Maze {
       let [x, y, path] = queue.shift();
       path = [...path, [x, y]];
 
-      // If we reach an endpoint, highlight the shortest path
+      // If we reach an endpoint, mark the shortest path
       if (this.endPoints.has(`${x},${y}`)) {
         for (const [px, py] of path) {
           if (this.grid[px][py] !== "S" && this.grid[px][py] !== "E") {
             this.grid[px][py] = "P"; // Mark path as yellow
           }
         }
-        updateGrid([...this.grid]);
+        
+        updateGrid([...this.grid]); // Final update to show the shortest path
+        await new Promise((resolve) => setTimeout(resolve, 50)); // Small delay to update UI
         return path;
       }
 
@@ -63,7 +65,7 @@ export class Maze {
           visited.add(`${nx},${ny}`);
           this.grid[nx][ny] = "V"; // Mark as visited
           updateGrid([...this.grid]); // Update UI
-          await new Promise((resolve) => setTimeout(resolve, 50));
+          await new Promise((resolve) => setTimeout(resolve, 50)); // Ensure smooth UI update
         }
       }
     }
