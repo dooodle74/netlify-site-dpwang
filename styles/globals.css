@@ -51,6 +51,13 @@ section {
   max-width: 960px;
 }
 
+.container100 {
+  width: 100%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container11 {
   font-size: 1.1rem;
 }
