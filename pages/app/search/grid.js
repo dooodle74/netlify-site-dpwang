@@ -3,7 +3,7 @@ import Header from '@components/apps/AppHeader';
 import Footer from '@components/apps/AppFooter';
 import { useState, useEffect } from 'react';
 import { Maze } from '@utils/search/gridLogic';
-import styles from '/styles/apps/search/searchGrid.module.css';
+import styles from '/styles/apps/search/SearchGrid.module.css';
 
 const NUM_ROWS = 16; // Fixed number of rows
 const NUM_COLS = 16; // Fixed number of columns
