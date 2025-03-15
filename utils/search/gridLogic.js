@@ -1,7 +1,8 @@
 export class Maze {
-  constructor(size = 16) {
-    this.size = size;
-    this.grid = Array.from({ length: size }, () => Array(size).fill(0));
+  constructor(rows = 16, cols = 16) {
+    this.rows = rows;
+    this.cols = cols;
+    this.grid = Array.from({ length: rows }, () => Array(cols).fill(0));
     this.start = null;
     this.endPoints = new Set();
   }
@@ -18,21 +19,15 @@ export class Maze {
 
   removeEnd(x, y) {
     this.endPoints.delete(`${x},${y}`);
-    this.grid[x][y] = 0; // Reset tile
+    this.grid[x][y] = 0;
   }
 
   addObstacle(x, y) {
     if (this.isValid(x, y)) this.grid[x][y] = 1;
   }
 
-  removeObstacle(x, y) {
-    if (this.grid[x][y] === 1) {
-      this.grid[x][y] = 0;
-    }
-  }
-
   isValid(x, y) {
-    return x >= 0 && x < this.size && y >= 0 && y < this.size;
+    return x >= 0 && x < this.rows && y >= 0 && y < this.cols;
   }
 
   async bfs(updateGrid) {
@@ -50,8 +45,14 @@ export class Maze {
       let [x, y, path] = queue.shift();
       path = [...path, [x, y]];
 
+      // If we reach an endpoint, highlight the shortest path
       if (this.endPoints.has(`${x},${y}`)) {
-        updateGrid(this.grid);
+        for (const [px, py] of path) {
+          if (this.grid[px][py] !== "S" && this.grid[px][py] !== "E") {
+            this.grid[px][py] = "P"; // Mark path as yellow
+          }
+        }
+        updateGrid([...this.grid]);
         return path;
       }
 
@@ -62,7 +63,7 @@ export class Maze {
           visited.add(`${nx},${ny}`);
           this.grid[nx][ny] = "V"; // Mark as visited
           updateGrid([...this.grid]); // Update UI
-          await new Promise((resolve) => setTimeout(resolve, 50)); // Delay for visualization
+          await new Promise((resolve) => setTimeout(resolve, 50));
         }
       }
     }
