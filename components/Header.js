@@ -11,18 +11,18 @@ const Header = () => {
         </Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="/photography" className={styles.navLink}>
-          Photos
+        <Link href="/app" className={styles.navLink}>
+          Apps
         </Link>
       </li>
       <li className={styles.navItem}>
         <Link href="/blog" className={styles.navLink}>
-          Blog
+          Notes
         </Link>
       </li>
       <li className={styles.navItem}>
-        <Link href="/app" className={styles.navLink}>
-          Apps
+        <Link href="/photography" className={styles.navLink}>
+          Photos
         </Link>
       </li>
       {/* <li className={`${styles.navItem} ${styles.floatRight}`}>

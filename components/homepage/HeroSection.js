@@ -5,9 +5,8 @@ const HeroSection = () => {
   return (
     <section id="hello" className={styles.section}>
       <div>
-        <p className={styles.pretitle}>HELLO, I AM</p>
-        <h1 className={styles.title}>DAVID WANG</h1>
-        <h2 className={styles.subtitle}>WELCOME TO MY HOMEPAGE</h2>
+        <h1 className={styles.title}>Hi, I'm <span className={styles.alias}>David</span></h1>
+        <h2 className={styles.subtitle}>I build things with code and sometimes a camera</h2>
       </div>
     </section>
   );
