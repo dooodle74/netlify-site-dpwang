@@ -93,8 +93,8 @@ export default function GlobeScene() {
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <Canvas camera={{ position: [0, 0, 4], fov: 45 }} style={{ background: '#060d1f' }}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={sunPos} intensity={10.0} color="#fff9e0" />
+        <ambientLight intensity={0.8} />
+        <directionalLight position={sunPos} intensity={12.0} color="#fff9e0" />
         <Earth rotationY={rotationY} />
         <Sun position={sunPos} />
         <Stars radius={100} depth={50} count={3000} factor={4} fade />
@@ -103,21 +103,20 @@ export default function GlobeScene() {
 
       <div style={{
         position: 'absolute',
-        bottom: 24,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        background: 'rgba(6,13,31,0.78)',
+        top: 16,
+        left: 16,
+        background: 'rgba(200,210,230,0.18)',
         backdropFilter: 'blur(10px)',
         borderRadius: 12,
-        padding: '14px 28px',
+        padding: '14px 20px',
         display: 'flex',
-        gap: 36,
-        alignItems: 'center',
+        flexDirection: 'column',
+        gap: 14,
         color: '#e8eaf6',
         fontFamily: 'monospace',
         fontSize: 13,
         userSelect: 'none',
-        minWidth: 460,
+        width: 200,
         boxSizing: 'border-box',
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
@@ -168,9 +167,10 @@ export default function GlobeScene() {
             cursor: isLive ? 'default' : 'pointer',
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             gap: 6,
             transition: 'all 0.2s',
-            flexShrink: 0,
+            width: '100%',
           }}
         >
           <span style={{

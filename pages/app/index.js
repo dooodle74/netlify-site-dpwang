@@ -21,9 +21,10 @@ const apps = [
   },
   {
     title: 'Globe',
-    description: 'An interactive 3D Earth you can spin and zoom',
+    description: 'Interactive Earth. Image credit NASA',
     href: '/app/globe',
     placeholder: '#060d1f',
+    image: '/static/app_icons/icon-globe.jpg',
   },
   {
     title: 'Coming Soon',
