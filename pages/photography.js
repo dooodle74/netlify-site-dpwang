@@ -38,7 +38,7 @@ export default function Photography({ photos = [] }) {
 
         <section className="sectionGray">
           <div className="container">
-            <h1>Photography</h1>
+            <h1>Gallery</h1>
             {/* I am an amateur photographer. My equipment includes:
             <ul>
               <li>Canon <Link href="https://en.wikipedia.org/wiki/Canon_EOS_5D_Mark_II" target="_blank" rel="noopener noreferrer">EOS 5D Mark II</Link> camera body;</li>

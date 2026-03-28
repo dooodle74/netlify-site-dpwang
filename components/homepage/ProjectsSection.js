@@ -8,18 +8,21 @@ const projects = [
     description: 'Interactive tools and games',
     href: '/app',
     placeholder: '#1e2d3d',
+    image: '/icon_code_filled.png',
   },
   {
     title: 'Notes',
     description: 'Blogs and projects',
     href: '/blog',
     placeholder: '#1a3a4a',
+    image: '/icon_note.jpg',
   },
   {
     title: 'Photos',
     description: 'My photography work',
     href: '/photography',
     placeholder: '#2c3e50',
+    image: '/icon_camera_filled.png',
   },
 ];
 
@@ -27,7 +30,7 @@ const ProjectsSection = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.links}>
+        {/* <div className={styles.links}>
           <a href="https://www.linkedin.com/in/dongpingwang/" target="_blank" rel="noopener noreferrer">
             <img src="/static/icons/logo-LinkedIn-mono.png" alt="LinkedIn" width="24" />
           </a>
@@ -37,14 +40,17 @@ const ProjectsSection = () => {
           <a href="/static/dw/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.resumeLink}>
             Resume
           </a>
-        </div>
+        </div> */}
 
         <div className={styles.grid}>
           {projects.map((project, i) => (
             <Link key={i} href={project.href} className={styles.card}>
               <div
                 className={styles.image}
-                style={{ backgroundColor: project.placeholder }}
+                style={{
+                  backgroundColor: project.placeholder,
+                  ...(project.image && { backgroundImage: `url(${project.image})` }),
+                }}
               />
               <div className={styles.label}>
                 <div className={styles.title}>{project.title}</div>

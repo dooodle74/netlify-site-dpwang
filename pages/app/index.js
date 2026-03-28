@@ -17,6 +17,7 @@ const apps = [
     description: 'Explore permutations, combinations, and counting',
     href: '/app/combinatorics',
     placeholder: '#1a3a4a',
+    image: '/static/app_icons/icon-combinatorics.jpg',
   },
   {
     title: 'Coming Soon',
