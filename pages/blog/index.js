@@ -27,12 +27,12 @@ export default function BlogsIndex() {
             <table className={styles.table}>
               <tbody>
                 <tr>
-                  <td className={styles.td}>
+                  {/* <td className={styles.td}>
                     <b>Rankings</b><br /> My personal ranking of different stuff. 
                   </td>
                   <td className={`${styles.td} ${styles.centered}`}>
                     <b><Link href='blog/rankings'>GOTO</Link></b><br/>
-                  </td>
+                  </td> */}
                 </tr>
               </tbody>
             </table>
