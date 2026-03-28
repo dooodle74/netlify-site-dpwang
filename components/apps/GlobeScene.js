@@ -158,7 +158,7 @@ export default function GlobeScene({ controls = true, markers = [] }) {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-      <Canvas camera={{ position: [0, 0, 4], fov: 45 }} style={{ background: '#060d1f' }}>
+      <Canvas camera={{ position: [0, 0, 4], fov: 45 }} style={{ background: '#000011' }}>
         <ambientLight intensity={0.8} />
         <directionalLight position={sunPos} intensity={12.0} color="#fff9e0" />
         <Earth rotationY={rotationY} />

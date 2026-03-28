@@ -23,7 +23,7 @@ export default function GlobeUsPage() {
         <section style={{ flex: 1, padding: 0, overflow: 'hidden' }}>
           <GlobeScene controls={true} markers={MARKERS} />
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

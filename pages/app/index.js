@@ -21,7 +21,7 @@ const apps = [
   },
   {
     title: 'Globe',
-    description: 'Interactive Earth. Image credit NASA',
+    description: 'Interactive Earth. Texture © NASA',
     href: '/app/globe',
     placeholder: '#060d1f',
     image: '/static/app_icons/icon-globe.jpg',

@@ -17,7 +17,7 @@ export default function GlobePage() {
         <section style={{ flex: 1, padding: 0, overflow: 'hidden' }}>
           <GlobeScene />
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );
