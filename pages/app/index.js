@@ -1,13 +1,32 @@
 import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
-import styles from '/styles/apps/App.module.css';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import styles from '/styles/apps/App.module.css';
+
+const apps = [
+  {
+    title: 'Search Visualizer',
+    description: 'Step through BFS, DFS, Dijkstra, and A* on a custom grid',
+    href: '/app/search',
+    placeholder: '#1e2d3d',
+    image: '/static/app_icons/icon-search_visualizer.jpg',
+  },
+  {
+    title: 'Combinatorics',
+    description: 'Explore permutations, combinations, and counting',
+    href: '/app/combinatorics',
+    placeholder: '#1a3a4a',
+  },
+  {
+    title: 'Coming Soon',
+    description: 'Another tool in the works',
+    href: '#',
+    placeholder: '#2c3e50',
+  },
+];
 
 export default function AppsIndex() {
-  const router = useRouter();
-
   return (
     <div>
       <Head>
@@ -18,21 +37,34 @@ export default function AppsIndex() {
         <Header />
         <section className="sectionGray">
           <div className="container">
-            <h1>Stuff</h1>
+            <h1>Apps</h1>
           </div>
         </section>
-    
-        <section>
-          <div className="container">
-            <div className={styles.tileContainer}>
-              <a href="app/search" className={styles.tile} style={{ backgroundImage: "url('/static/app_icons/search_icon_3.png')"  }}></a>
-              <a href="app/combinatorics" className={styles.tile} style={{ backgroundImage: "url('/static/app_icons/combinatorics_icon.png')" }}></a>
-              <a href="/" className={styles.tile} style={{ backgroundImage: "url('/path/to/image3.jpg')" }}></a>
+
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <div className={styles.grid}>
+              {apps.map((app, i) => (
+                <Link key={i} href={app.href} className={styles.card}>
+                  <div
+                    className={styles.image}
+                    style={{
+                      backgroundColor: app.placeholder,
+                      ...(app.image && { backgroundImage: `url(${app.image})` }),
+                    }}
+                  />
+                  <div className={styles.label}>
+                    <div className={styles.title}>{app.title}</div>
+                    <div className={styles.description}>{app.description}</div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
+
         <Footer />
       </main>
     </div>
-  )
+  );
 }

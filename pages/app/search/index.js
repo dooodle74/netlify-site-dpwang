@@ -38,12 +38,19 @@ function parseCoord(item) {
   return null;
 }
 
-function StructuresPanel({ structures, highlightedCell, onItemClick }) {
+function StructuresPanel({ structures, highlightedCell, onItemClick, horizontal }) {
   if (!structures || structures.length === 0) return null;
   return (
-    <div className={styles.structuresPanel}>
+    <div
+      className={styles.structuresPanel}
+      style={horizontal ? { flexDirection: 'row', alignItems: 'flex-start' } : undefined}
+    >
       {structures.map(({ label, accent, items }) => (
-        <div key={label} className={`${styles.structureCard} ${styles[`accent_${accent}`]}`}>
+        <div
+          key={label}
+          className={`${styles.structureCard} ${styles[`accent_${accent}`]}`}
+          style={horizontal ? { flex: '1 1 0', width: 0, minWidth: 0 } : undefined}
+        >
           <div className={styles.structureHeader}>
             <span className={styles.structureLabel}>{label}</span>
             <span className={styles.structureCount}>{items.length}</span>
@@ -80,15 +87,26 @@ export default function SearchGrid() {
   const [grid, setGrid] = useState(() => new Maze(16, 16).snapshot());
   const [mode, setMode] = useState('obstacle');
   const [algorithm, setAlgorithm] = useState('bfs');
-  const [stepsPerSec, setStepsPerSec] = useState(10);
+  const [stepsPerSec, setStepsPerSec] = useState(100);
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [status, setStatus] = useState('idle');
   const [structures, setStructures] = useState(null);
   const [elapsedMs, setElapsedMs] = useState(null);
+  const [liveOps, setLiveOps] = useState(null);
   const [highlightedCell, setHighlightedCell] = useState(null);
   const [pathLength, setPathLength] = useState(null);
   const startTimeRef = useRef(null);
+  const recentStepsRef = useRef([]);
+  const warmupRef = useRef(null);
+  const [narrowLayout, setNarrowLayout] = useState(false);
+
+  useEffect(() => {
+    const check = () => setNarrowLayout(window.innerWidth <= 960);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
   const [codeStr, setCodeStr] = useState(() => encodeMaze(new Maze(16, 16)));
   const [codeError, setCodeError] = useState('');
   const cancelRef = useRef(false);
@@ -144,18 +162,28 @@ export default function SearchGrid() {
     setGrid(maze.snapshot());
     setStructures(null);
     setElapsedMs(null);
+    setLiveOps(null);
     setHighlightedCell(null);
     setPathLength(null);
     startTimeRef.current = Date.now();
+    warmupRef.current = Date.now();
+    recentStepsRef.current = [];
     cancelRef.current = false;
     pauseRef.current  = false;
     setIsRunning(true);
     setIsPaused(false);
+    setLiveOps(null);
     setStatus('running');
     const delayMs = Math.max(1, Math.round(1000 / Math.max(1, stepsPerSec)));
     const tickStructures = (s) => {
+      const now = Date.now();
+      recentStepsRef.current.push(now);
+      // sliding window: keep only timestamps within the last second
+      const cutoff = now - 1000;
+      recentStepsRef.current = recentStepsRef.current.filter(t => t > cutoff);
       setStructures(s);
-      setElapsedMs(Date.now() - startTimeRef.current);
+      setElapsedMs(now - startTimeRef.current);
+      setLiveOps((now - warmupRef.current) >= 1000 ? recentStepsRef.current.length : null);
     };
     const result = await maze.runAlgorithm(algorithm, setGrid, tickStructures, delayMs, cancelRef, pauseRef);
     setElapsedMs(Date.now() - startTimeRef.current);
@@ -180,6 +208,12 @@ export default function SearchGrid() {
     pauseRef.current = next;
     setIsPaused(next);
     setStatus(next ? 'paused' : 'running');
+    if (!next) {
+      // resuming — reset warmup window and blank the display
+      warmupRef.current = Date.now();
+      recentStepsRef.current = [];
+      setLiveOps(null);
+    }
   };
 
   const resetPath = () => {
@@ -188,6 +222,7 @@ export default function SearchGrid() {
     setGrid(maze.snapshot());
     setStructures(null);
     setElapsedMs(null);
+    setLiveOps(null);
     setHighlightedCell(null);
     setStatus('idle');
   };
@@ -199,6 +234,7 @@ export default function SearchGrid() {
     setGrid(m.snapshot());
     setStructures(null);
     setElapsedMs(null);
+    setLiveOps(null);
     setHighlightedCell(null);
     setStatus('idle');
   };
@@ -286,7 +322,7 @@ export default function SearchGrid() {
 
             {/* Mode */}
             <div className={styles.controlGroup}>
-              <span className={styles.groupLabel}>Mode</span>
+              <span className={styles.groupLabel}>Click Mode</span>
               <div className={styles.modeButtons}>
                 {MODES.map(m => (
                   <button
@@ -407,7 +443,7 @@ export default function SearchGrid() {
         </div>{/* leftColumn */}
 
         <div className={styles.rightColumn}>
-          <div className={styles.rightColumnHeader}>Data Structures</div>
+          <div className={styles.rightColumnHeader}>Live Stats and Data Structures</div>
           {elapsedMs !== null && (
             <div className={styles.counters}>
               <div className={styles.counter}>
@@ -415,10 +451,8 @@ export default function SearchGrid() {
                 <span className={styles.counterValue}>{elapsedMs} ms</span>
               </div>
               <div className={styles.counter}>
-                <span className={styles.counterLabel}>Space</span>
-                <span className={styles.counterValue}>
-                  {structures ? structures.reduce((sum, s) => sum + s.items.length, 0) : 0} items
-                </span>
+                <span className={styles.counterLabel}>Live Speed</span>
+                <span className={styles.counterValue}>{liveOps !== null ? `${liveOps} steps/s` : '—'}</span>
               </div>
             </div>
           )}
@@ -427,10 +461,11 @@ export default function SearchGrid() {
               structures={structures}
               highlightedCell={highlightedCell}
               onItemClick={handleStructureItemClick}
+              horizontal={narrowLayout}
             />
           ) : (
             <p className={styles.rightColumnEmpty}>
-              Run an algorithm to see live data structures.
+              Run an algorithm to see live data.
             </p>
           )}
         </div>
