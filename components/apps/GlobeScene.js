@@ -27,13 +27,14 @@ function getCurrentTimeOfDay() {
   return now.getUTCHours() + now.getUTCMinutes() / 60 + now.getUTCSeconds() / 3600;
 }
 
-function getSunPosition(dayOfYear) {
-  // Sun is fixed in world space for a given day — intraday motion is shown by Earth rotating
+function getSunPosition(timeOfDay, dayOfYear) {
+  // Earth is fixed; sun orbits around it to show time of day
+  const hourAngle = ((timeOfDay - 12) / 24) * Math.PI * 2;
   const decl = -23.45 * Math.cos((2 * Math.PI / 365) * (dayOfYear + 10)) * (Math.PI / 180);
   return [
-    0,
+    SUN_DISTANCE * Math.cos(decl) * Math.cos(hourAngle),
     SUN_DISTANCE * Math.sin(decl),
-    SUN_DISTANCE * Math.cos(decl),
+    SUN_DISTANCE * Math.cos(decl) * Math.sin(hourAngle),
   ];
 }
 
@@ -145,10 +146,10 @@ export default function GlobeScene({ controls = true, markers = [] }) {
     return () => clearInterval(id);
   }, [isLive]);
 
-  const sunPos = useMemo(() => getSunPosition(dayOfYear), [dayOfYear]);
-  // Three.js SphereGeometry maps U=0.5 (prime meridian) to the +X axis at rotationY=0,
-  // so subtract π/2 to align noon (PM facing +Z sun) correctly.
-  const rotationY = useMemo(() => ((timeOfDay - 12) / 24) * Math.PI * 2 - Math.PI / 2, [timeOfDay]);
+  const sunPos = useMemo(() => getSunPosition(timeOfDay, dayOfYear), [timeOfDay, dayOfYear]);
+  // Earth is fixed; sun rotates around it based on time of day.
+  // rotationY=0 places the prime meridian (+X) and Americas (+Z) correctly per texture mapping.
+  const rotationY = 0;
 
   const timeLabel = useMemo(() => {
     const h = Math.floor(timeOfDay % 24);
