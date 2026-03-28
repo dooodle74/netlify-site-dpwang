@@ -20,6 +20,12 @@ const apps = [
     image: '/static/app_icons/icon-combinatorics.jpg',
   },
   {
+    title: 'Globe',
+    description: 'An interactive 3D Earth you can spin and zoom',
+    href: '/app/globe',
+    placeholder: '#060d1f',
+  },
+  {
     title: 'Coming Soon',
     description: 'Another tool in the works',
     href: '#',

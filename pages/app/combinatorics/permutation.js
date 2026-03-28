@@ -97,7 +97,7 @@ export default function PermutationPage() {
                 </p>
                 <h3>Formula:</h3>
                 <BlockMath math={result.formula} />
-                <h3>Count: {result.value}</h3>
+                <h3>= {result.value}</h3>
               </div>
 
               {/* Display the button if result.value <= 999 */}
