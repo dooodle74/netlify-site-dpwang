@@ -1,6 +1,6 @@
 import { useRef, useMemo, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Sphere, useTexture, OrbitControls, Stars } from '@react-three/drei';
+import { Sphere, useTexture, OrbitControls, Stars, Html } from '@react-three/drei';
 
 const SUN_DISTANCE = 22;
 
@@ -37,6 +37,54 @@ function getSunPosition(dayOfYear) {
   ];
 }
 
+function Markers({ markers, rotationY }) {
+  const groupRef = useRef();
+
+  useEffect(() => {
+    if (groupRef.current) groupRef.current.rotation.y = rotationY;
+  }, [rotationY]);
+
+  return (
+    <group ref={groupRef}>
+      {markers.map((marker, i) => {
+        const pos = latLonToVec3(marker.lat, marker.lon, 1.5);
+        return (
+          <Html key={i} position={pos} occlude>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              transform: 'translate(-50%, -100%)',
+              pointerEvents: 'none',
+            }}>
+              <img
+                src={marker.image}
+                style={{
+                  width: 50,
+                  height: 50,
+                  borderRadius: '50%',
+                  // border: '1px solid rgba(255,255,255,0.9)',
+                  // boxShadow: '0 2px 10px rgba(0,0,0,0.6)',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
+              />
+              <div style={{ width: 2, height: 25, background: 'rgba(255,255,255,0.7)' }} />
+              <div style={{
+                width: 6,
+                height: 6,
+                borderRadius: '50%',
+                background: 'white',
+                boxShadow: '0 0 6px rgba(255,255,255,0.9)',
+              }} />
+            </div>
+          </Html>
+        );
+      })}
+    </group>
+  );
+}
+
 function Sun({ position }) {
   return (
     <>
@@ -48,6 +96,17 @@ function Sun({ position }) {
       </Sphere>
     </>
   );
+}
+
+// Matches the texture UV mapping: lon=0 → +X, lon=90E → -Z, lat=90N → +Y
+function latLonToVec3(lat, lon, radius) {
+  const φ = (lat * Math.PI) / 180;
+  const λ = (lon * Math.PI) / 180;
+  return [
+    radius * Math.cos(φ) * Math.cos(λ),
+    radius * Math.sin(φ),
+    -radius * Math.cos(φ) * Math.sin(λ),
+  ];
 }
 
 function Earth({ rotationY }) {
@@ -65,10 +124,17 @@ function Earth({ rotationY }) {
   );
 }
 
-export default function GlobeScene() {
+export default function GlobeScene({ controls = true, markers = [] }) {
   const [timeOfDay, setTimeOfDay] = useState(() => getCurrentTimeOfDay());
   const [dayOfYear, setDayOfYear] = useState(() => getCurrentDayOfYear());
   const [isLive, setIsLive] = useState(true);
+  const [narrow, setNarrow] = useState(() => typeof window !== 'undefined' && window.innerWidth < 600);
+
+  useEffect(() => {
+    const onResize = () => setNarrow(window.innerWidth < 600);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   useEffect(() => {
     if (!isLive) return;
@@ -98,25 +164,26 @@ export default function GlobeScene() {
         <Earth rotationY={rotationY} />
         <Sun position={sunPos} />
         <Stars radius={100} depth={50} count={3000} factor={4} fade />
+        {markers.length > 0 && <Markers markers={markers} rotationY={rotationY} />}
         <OrbitControls enablePan={false} enableZoom minDistance={2.5} maxDistance={10} />
       </Canvas>
 
-      <div style={{
+      {controls && <div style={{
         position: 'absolute',
-        top: 16,
-        left: 16,
+        ...(narrow
+          ? { bottom: 16, left: '50%', transform: 'translateX(-50%)', flexDirection: 'row', gap: 24, width: 'max-content', maxWidth: 'calc(100vw - 32px)' }
+          : { top: 16, left: 16, flexDirection: 'column', gap: 14, width: 200 }
+        ),
         background: 'rgba(200,210,230,0.18)',
         backdropFilter: 'blur(10px)',
         borderRadius: 12,
         padding: '14px 20px',
         display: 'flex',
-        flexDirection: 'column',
-        gap: 14,
+        alignItems: 'center',
         color: '#e8eaf6',
         fontFamily: 'monospace',
         fontSize: 13,
         userSelect: 'none',
-        width: 200,
         boxSizing: 'border-box',
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
@@ -170,7 +237,8 @@ export default function GlobeScene() {
             justifyContent: 'center',
             gap: 6,
             transition: 'all 0.2s',
-            width: '100%',
+            width: narrow ? 'auto' : '100%',
+            flexShrink: 0,
           }}
         >
           <span style={{
@@ -184,7 +252,7 @@ export default function GlobeScene() {
           }} />
           LIVE
         </button>
-      </div>
+      </div>}
     </div>
   );
 }
