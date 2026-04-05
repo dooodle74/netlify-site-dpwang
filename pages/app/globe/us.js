@@ -7,7 +7,7 @@ const GlobeScene = dynamic(() => import('@components/apps/GlobeScene'), { ssr: f
 
 const MARKERS = [
   { lat: 38.9072, lon: -77.0369, image: '/app/globe/emoji-yam.png' }, 
-  { lat: 39.9042, lon: 116.4074, image: '/app/globe/emoji-tomato.png' }, 
+  { lat: 30.5928, lon: 114.3052, image: '/app/globe/emoji-tomato.png' }, 
   // beijing 39.9042, 116.4074
   // wuhan 30.5928, 114.3052
   // washington 38.9072, -77.0369
