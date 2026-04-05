@@ -6,9 +6,13 @@ import Footer from '@components/apps/AppFooter';
 const GlobeScene = dynamic(() => import('@components/apps/GlobeScene'), { ssr: false });
 
 const MARKERS = [
-  { lat: 38.9072, lon: -77.0369, image: '/app/globe/emoji-yam.png' }, //city: washington dc
-  { lat: 55.6761, lon: 12.5683, image: '/app/globe/emoji-tomato.png' }, // city: copenhagen
-  // { lat: 30.5928, lon: 114.3052, image: '' },
+  { lat: 38.9072, lon: -77.0369, image: '/app/globe/emoji-yam.png' }, 
+  { lat: 39.9042, lon: 116.4074, image: '/app/globe/emoji-tomato.png' }, 
+  // beijing 39.9042, 116.4074
+  // wuhan 30.5928, 114.3052
+  // washington 38.9072, -77.0369
+  // copenhagen 55.6761, 12.5683
+  // london 51.5072, -0.1276
 ];
 
 export default function GlobeUsPage() {
